@@ -47,3 +47,7 @@ Using this dialog you can :
 after a remote control permission is granted,  NVDA + O will move the focus in /Out of  the remote controlled screen
 
 Note that the focus should be on one of the meeting controls to be able to remote control the other screen
+
+## An Important note
+
+Currently the feature of custom alerts mode where the user can choose which alerts they want to have and which not works with Zoom only when the user interface language is set to english.
