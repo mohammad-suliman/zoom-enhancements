@@ -3,6 +3,7 @@
 #This file is covered by the GNU General Public License
 #See the file COPYING for more details
 
+from nvdaBuiltin.appModules.zoom import *
 import appModuleHandler
 import eventHandler
 import tones
@@ -213,6 +214,9 @@ class SettingsDialog(gui.SettingsDialog):
         alertsGroup.addItem(self.RoleChangedToAttendeeCheckBox)
         """
 
+    def postInit(self):
+        self.alertsReportingMode.SetFocus()
+
     def onOk(self, evt):
         newMode = [x[1] for x in alertModeToLabel.items()][self.alertsReportingMode.GetSelection()]
         config.conf["zoomEnhancements"]["alertsReportingMode"] = newMode
@@ -284,14 +288,7 @@ alertModeToLabel = {
 }
 
 
-class AppModule(appModuleHandler.AppModule):
-
-    def __init__(self, *args, **kwargs):
-        super(AppModule, self).__init__(*args, **kwargs)
-        # Explicetly allow alert events for zoom"s chat windows.
-        # Zoom alerts are not  zoom foreground window descendants.
-        eventHandler.requestEvents(
-            "alert", processId=self.processID, windowClassName="zoom_acc_notify_wnd")
+class AppModule(AppModule):
 
     def event_alert(self, obj, nextHandler):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] == "Report all alerts"):
@@ -354,10 +351,11 @@ class AppModule(appModuleHandler.AppModule):
         else:
             nextHandler()
 
+    scriptCategory = SCRCAT_ZOOMENHANCEMENTS
+
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting joined / left meeting alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+1",
             "kb(desktop):NVDA+control+numpad1"
@@ -376,7 +374,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting joined / left Waiting Room alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+2",
             "kb(desktop):NVDA+control+numpad2"
@@ -396,7 +393,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting audio muted by host alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+3",
             "kb(desktop):NVDA+control+numpad3"
@@ -415,7 +411,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting video stopped by host alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+4",
             "kb(desktop):NVDA+control+numpad4"
@@ -434,7 +429,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting screen sharing started / stopped by participant alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+5",
             "kb(desktop):NVDA+control+numpad5",
@@ -454,7 +448,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting recording permission granted / revoked alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+6",
             "kb(desktop):NVDA+control+numpad6"
@@ -473,7 +466,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting public in-meeting chat received alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+7",
             "kb(desktop):NVDA+control+numpad7"
@@ -492,7 +484,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting private in-meeting chat received alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+8",
             "kb(desktop):NVDA+control+numpad8"
@@ -511,7 +502,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting in-meeting file upload completed alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+9",
             "kb(desktop):NVDA+control+numpad9"
@@ -530,7 +520,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting host privilege granted / revoked alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+control+0",
             "kb(desktop):NVDA+control+numpad0"
@@ -549,7 +538,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting participant raised / lowered hand alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+shift+control+1",
             "kb(desktop):NVDA+shift+control+numpad1"
@@ -568,7 +556,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting remote control permission granted /revoked alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+shift+control+2",
             "kb(desktop):NVDA+shift+control+numpad2"
@@ -588,7 +575,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
         description = _("Toggles reporting IM chat received alerts on / off"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gestures=[
             "kb:NVDA+shift+control+3",
             "kb(desktop):NVDA+shift+control+numpad3"
@@ -607,7 +593,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to cycle between alerts reporting modes
         description = _("Toggles between reporting alerts as usual, beeping for the alert, silencing alerts completely, or custom mode, where you can choose which alerts are reported and which aren't."),
-        category = SCRCAT_ZOOMENHANCEMENTS,
         gesture="kb:NVDA+Shift+a"
     )
     def script_toggleAlertsMode(self, gesture):
@@ -623,7 +608,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to move the focus in / out of the remote controlled screen
         description = _("Moves focus in / out of the remote controlled screen"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gesture="kb:NVDA+o"
     )
     def script_remoteControl(self, gesture):
@@ -667,7 +651,6 @@ class AppModule(appModuleHandler.AppModule):
     @script(
         # Translators: a description for a command to show the add-on settings dialog
         description = _("Shows Zoom enhancements settings dialog"),
-        category=SCRCAT_ZOOMENHANCEMENTS,
         gesture="kb:NVDA+z"
     )
     def script_showSettingsDialog(self, gesture):
