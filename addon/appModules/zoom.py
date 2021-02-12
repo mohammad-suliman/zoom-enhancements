@@ -48,29 +48,16 @@ def initConfiguration():
     config.conf.spec["zoomEnhancements"] = confspec
 
 
-def popupMenu(evt):
-    gui.mainFrame._popupSettingsDialog(SettingsDialog)
-
-
-def createMenu():
-    prefsMenuItem = gui.mainFrame.sysTrayIcon.preferencesMenu.Append(
-        # Translators: the name of the add-on menu item in NVDA menu
-        wx.ID_ANY, _("Zoom Enhancements..."))
-    gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, popupMenu, prefsMenuItem)
-
-
 # Execute on init
-createMenu()
-initConfiguration()
 addonHandler.initTranslation()
 
 
-class SettingsDialog(gui.SettingsDialog):
+class SettingsPanel(gui.SettingsPanel):
     # Translators: Title for the settings dialog
     title = _("Zoom Enhancements settings")
 
-    def __init__(self, *args, **kwargs):
-        super(SettingsDialog, self).__init__(*args, **kwargs)
+    # def __init__(self, *args, **kwargs):
+    #     super(SettingsDialog, self).__init__(*args, **kwargs)
 
     def makeSettings(self, settingsSizer):
         settingsSizerHelper = gui.guiHelper.BoxSizerHelper(
@@ -214,10 +201,7 @@ class SettingsDialog(gui.SettingsDialog):
         alertsGroup.addItem(self.RoleChangedToAttendeeCheckBox)
         """
 
-    def postInit(self):
-        self.alertsReportingMode.SetFocus()
-
-    def onOk(self, evt):
+    def onSave(self):
         newMode = [x[1] for x in alertModeToLabel.items()][self.alertsReportingMode.GetSelection()]
         config.conf["zoomEnhancements"]["alertsReportingMode"] = newMode
         config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = self.ParticipantHasJoinedLeftMeetingCheckbox.IsChecked()
@@ -239,7 +223,6 @@ class SettingsDialog(gui.SettingsDialog):
         # config.conf["zoomEnhancements"]["Q&AAnswerReceived"]= self.QAndAAnswerReceivedCheckBox.IsChecked()
         # config.conf["zoomEnhancements"]["RoleChangedToPanelist"] = self.RoleChangedToPanelistCheckBox.IsChecked()
         # config.conf["zoomEnhancements"]["RoleChangedToAttendee"] = self.RoleChangedToAttendeeCheckBox.IsChecked()
-        super(SettingsDialog, self).onOk(evt)
 
 
 # Some regular expressions to determine the type of the alert
@@ -289,6 +272,15 @@ alertModeToLabel = {
 
 
 class AppModule(AppModule):
+
+    def __init__(self, processID, appName):
+        super(AppModule, self).__init__(processID, appName)
+        initConfiguration()
+        gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(SettingsPanel)
+
+    def terminate(self):
+        super(AppModule, self).terminate()
+        gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(SettingsPanel)
 
     def event_alert(self, obj, nextHandler):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] == "Report all alerts"):
