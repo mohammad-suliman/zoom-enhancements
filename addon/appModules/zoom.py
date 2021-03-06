@@ -14,17 +14,19 @@ import re
 import config
 import gui
 from gui import guiHelper
+from gui.settingsDialogs import NVDASettingsDialog
+from gui.nvdaControls import DPIScaledDialog
 import wx
 import api
 import controlTypes
 import mouseHandler
 import winUser
 import addonHandler
-
+import datetime
 
 def initConfiguration():
     confspec = {
-        "alertsReportingMode": "string(default=custom)",
+        "alertsReportingMode": "string(default=Custom)",
         "ParticipantHasJoined/LeftMeeting": "boolean(default=True)",
         "ParticipantHasJoined/LeftWaitingRoom": "boolean(default=True)",
         "AudioMutedByHost": "boolean(default=True)",
@@ -55,12 +57,9 @@ addonHandler.initTranslation()
 class SettingsPanel(gui.SettingsPanel):
     # Translators: Title for the settings dialog
     title = _("Zoom Enhancements settings")
-
-    # def __init__(self, *args, **kwargs):
-    #     super(SettingsDialog, self).__init__(*args, **kwargs)
-
+    
     def makeSettings(self, settingsSizer):
-        settingsSizerHelper = gui.guiHelper.BoxSizerHelper(
+        settingsSizerHelper = guiHelper.BoxSizerHelper(
             self, sizer=settingsSizer)
         modeChoices = [item[1] for item in alertModeToLabel.items()]
         self.alertsReportingMode = settingsSizerHelper.addLabeledControl(
@@ -80,7 +79,7 @@ class SettingsPanel(gui.SettingsPanel):
         settingsSizerHelper.addItem(alertsGroup)
         # Translators: a label of a checkbox in the settings dialog
         self.ParticipantHasJoinedLeftMeetingCheckbox = wx.CheckBox(
-            self, label=_("Participant Has Joined/Left Meeting (Host Only)"))
+            self, label=_("Participant Has Joined/Left Meeting"))
         self.ParticipantHasJoinedLeftMeetingCheckbox.SetValue(
             config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"])
         alertsGroup.addItem(
@@ -225,10 +224,39 @@ class SettingsPanel(gui.SettingsPanel):
         # config.conf["zoomEnhancements"]["RoleChangedToAttendee"] = self.RoleChangedToAttendeeCheckBox.IsChecked()
 
 
+class DialogWithList(DPIScaledDialog):
+
+    def __init__(self, title, items, appModule):
+        windowStyle = wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.MAXIMIZE_BOX
+        super().__init__(gui.mainFrame, title = title, style = windowStyle)
+        mainSizer=wx.BoxSizer(wx.VERTICAL)
+        sHelper = guiHelper.BoxSizerHelper(self, wx.VERTICAL)
+        self.itemList = wx.ListBox(self)
+        if items:
+            self.itemList.InsertItems(items, 0)
+        sHelper.addItem(self.itemList)
+        sHelper.addDialogDismissButtons(wx.CLOSE, True)
+        mainSizer.Add(sHelper.sizer, border = guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL | wx.EXPAND, proportion=1)
+        mainSizer.Fit(self)
+        self.SetSizer(mainSizer)
+        self.SetMinSize(self.scaleSize(self.MIN_SIZE))
+        self.SetSize(self.scaleSize(self.INITIAL_SIZE))
+        self.CentreOnScreen()
+        self.appModule = appModule
+        self.Bind(wx.EVT_CLOSE, self.onClose)
+
+    INITIAL_SIZE = (800, 480)
+    MIN_SIZE = (470, 240)
+
+    def onClose(self, event):
+        self.appModule.raisedHandDialog = None
+        event.Skip()
+
+
 # Some regular expressions to determine the type of the alert
-joinedLeftMeetingRegEx = re.compile("^.+ has (joined|left) the meeting$")
+joinedLeftMeetingRegEx = re.compile("^.+ (has|have) (joined|left) the meeting$")
 joinedLeftWaitingRoomRegEx = re.compile(
-    "^.+has (entered|left) the Waiting Room for this meeting.*$")
+    "^.+ (has|have) (entered|left) the Waiting Room for this meeting.*$")
 audioMutedByHostRegEx = re.compile("The host muted you.")
 videoStoppedByHostRegEx = re.compile("Host has stopped your video")
 screenSharingStartedStoppedByParticipantRegEx = re.compile(
@@ -237,13 +265,14 @@ recordingPermissionGrantedRevokedRegEx = re.compile(
     "Host (dis)?allows you to record this meeting.")
 publicInMeetingChatReceivedRegEx = re.compile("^From .* to Everyone: .*$")
 privateInMeetingChatReceivedRegEx = re.compile("^From .* to Me: .*$")
+inMeetingChatReceivedPrefixRegEx = re.compile("^From .* to (Everyone|Me)$")
 inMeetingFileUploadCompletedRegEx = re.compile(
     "File \(.*\) sent successfully.")
 hostPrivilegeGrantedRevokedRegEx = re.compile(
     "(^You are the host now$|^.+is the host now$)")
 remoteControlPermissionGrantedRevokedRegEx = re.compile(
     "^You can control .+'s screen$")
-raisedLoweredHandRegEx = re.compile("^.*has (raised|lowered) hand$")
+raisedLoweredHandRegEx = re.compile("^.* (has )?(raised|lowered) hand$")
 iMChatReceivedRegEx = re.compile(r"^.+, \d+ unread messages?")
 # coHostPrivilegeGrantedRevoked = re.compile("")
 # livestreamStartedStoppedRegEx = re.compile("")
@@ -261,13 +290,13 @@ SCRCAT_ZOOMENHANCEMENTS = _("Zoom Enhancements")
 # Alert reporting mode to label dict
 alertModeToLabel = {
     # Translators: a lable for alerts reporting mode
-    0: _("report all alerts"),
+    0: _("Report all alerts"),
     # Translators: a lable for alerts reporting mode
     1: _("Beep for alerts"),
     # Translators: a lable for alerts reporting mode
     2: _("Silence all alerts"),
     # Translators: a lable for alerts reporting mode
-    3: _("custom")
+    3: _("Custom")
 }
 
 
@@ -275,14 +304,21 @@ class AppModule(AppModule):
 
     def __init__(self, processID, appName):
         super(AppModule, self).__init__(processID, appName)
+        eventHandler.requestEvents("nameChange",processId=self.processID,windowClassName="zBubbleBaseClass")
         initConfiguration()
         gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(SettingsPanel)
+        self.chatHistoryDialog = None
+        self.chatHistoryList = []
+        self.ricievedChatPrefix = False
+        self.chatPrefixText = ""
 
     def terminate(self):
         super(AppModule, self).terminate()
         gui.settingsDialogs.NVDASettingsDialog.categoryClasses.remove(SettingsPanel)
 
     def event_alert(self, obj, nextHandler):
+        if publicInMeetingChatReceivedRegEx.fullmatch(obj.name) or privateInMeetingChatReceivedRegEx.fullmatch(obj.name):
+            self._handleChatMessage(obj.name)
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] == "Report all alerts"):
             nextHandler()
             return
@@ -342,6 +378,21 @@ class AppModule(AppModule):
             return
         else:
             nextHandler()
+
+    def event_nameChange(self, obj, nextHandler):
+        nextHandler()
+        if obj.role == controlTypes.ROLE_STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
+            if self.ricievedChatPrefix:
+                obj.name = self.chatPrefixText + ": " + obj.name
+                self.ricievedChatPrefix = False
+                self.chatPrefixText = ""
+            elif inMeetingChatReceivedPrefixRegEx.fullmatch(obj.name):
+                self.chatPrefixText = obj.name
+                self.ricievedChatPrefix = True
+                return
+            obj.role = controlTypes.ROLE_ALERT
+            log.debug(obj.devInfo)
+            eventHandler.queueEvent("alert", obj)
 
     scriptCategory = SCRCAT_ZOOMENHANCEMENTS
 
@@ -640,10 +691,30 @@ class AppModule(AppModule):
         except:
             pass
 
+    def _handleChatMessage(self, alert):
+        now = datetime.datetime.now()
+        now = str(now.hour) + ":" + str(now.minute)
+        alert += ", " + now
+        self.chatHistoryList.append(alert)
+        if self.chatHistoryDialog:
+            self.chatHistoryDialog.itemList.InsertItems([alert], self.chatHistoryDialog.itemList.GetCount())
+
     @script(
         # Translators: a description for a command to show the add-on settings dialog
         description = _("Shows Zoom enhancements settings dialog"),
         gesture="kb:NVDA+z"
     )
     def script_showSettingsDialog(self, gesture):
-        popupMenu(evt = None)
+        gui.mainFrame._popupSettingsDialog(NVDASettingsDialog, SettingsPanel)
+
+    @script(
+        # Translators: a description for a command to show chat history dialog
+        description = _("Shows chat history dialog"),
+        gesture="kb:NVDA+control+h"
+    )
+    def script_showChatHistoryDialog(self, gesture):
+        gui.mainFrame.prePopup()
+        # Translaters: the title of the chat history dialog
+        self.chatHistoryDialog = DialogWithList(_("Chat history"), self.chatHistoryList, self)
+        self.chatHistoryDialog.Show()
+        gui.mainFrame.postPopup()
