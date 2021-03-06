@@ -44,9 +44,15 @@ Using this dialog you can :
 
 ## Remote control 
 
-after a remote control permission is granted,  NVDA + O will move the focus in /Out of  the remote controlled screen
+after a remote control permission is granted,  NVDA + O will move the focus in /Out of  the remote controlled screen.
 
-Note that the focus should be on one of the meeting controls to be able to remote control the other screen
+Note that the focus should be on one of the meeting controls to be able to remote control the other screen!
+
+## Chat history dialog
+
+The add-on has a custom dialog where you can see all chat messages sent during the meeting and while the add-on was running.
+To open this dialog, use NVDA + Ctrl + h.
+The dialog is very simplistic, it has a list of the sent chat messages with their timestamps also.
 
 ## An Important note
 
