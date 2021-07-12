@@ -306,7 +306,9 @@ class AppModule(AppModule):
         super(AppModule, self).__init__(processID, appName)
         eventHandler.requestEvents("nameChange",processId=self.processID,windowClassName="zBubbleBaseClass")
         initConfiguration()
-        gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(SettingsPanel)
+        categoryClasses = gui.settingsDialogs.NVDASettingsDialog.categoryClasses
+        if not (SettingsPanel in categoryClasses):
+            categoryClasses.append(SettingsPanel)
         self.chatHistoryDialog = None
         self.chatHistoryList = []
         self.ricievedChatPrefix = False
