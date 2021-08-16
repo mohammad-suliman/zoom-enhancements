@@ -77,86 +77,86 @@ class SettingsPanel(gui.SettingsPanel):
         alertsGroup = guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(
             wx.StaticBox(self, label=alertsGroupText), wx.VERTICAL))
         settingsSizerHelper.addItem(alertsGroup)
-        # Translators: a label of a checkbox in the settings dialog
         self.ParticipantHasJoinedLeftMeetingCheckbox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Participant Has Joined/Left Meeting"))
         self.ParticipantHasJoinedLeftMeetingCheckbox.SetValue(
             config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"])
         alertsGroup.addItem(
             self.ParticipantHasJoinedLeftMeetingCheckbox)
-        # Translators: a label of a checkbox in the settings dialog
         self.ParticipantHasJoinedLeftWaitingRoomCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Participant Has Joined/Left Waiting Room"))
         self.ParticipantHasJoinedLeftWaitingRoomCheckBox.SetValue(
             config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"])
         alertsGroup.addItem(
             self.ParticipantHasJoinedLeftWaitingRoomCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.AudioMutedByHostCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Audio Muted by Host"))
         self.AudioMutedByHostCheckBox.SetValue(
             config.conf["zoomEnhancements"]["AudioMutedByHost"])
         alertsGroup.addItem(self.AudioMutedByHostCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.VideoStoppedByHostCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Video Stopped by Host"))
         self.VideoStoppedByHostCheckBox.SetValue(
             config.conf["zoomEnhancements"]["VideoStoppedByHost"])
         alertsGroup.addItem(self.VideoStoppedByHostCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.ScreenSharingStartedStoppedByParticipantCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Screen Sharing Started/Stopped by a Participant"))
         self.ScreenSharingStartedStoppedByParticipantCheckBox.SetValue(
             config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"])
         alertsGroup.addItem(
             self.ScreenSharingStartedStoppedByParticipantCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.RecordingPermissionGrantedRevokedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Recording Permission Granted/Revoked"))
         self.RecordingPermissionGrantedRevokedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"])
         alertsGroup.addItem(
             self.RecordingPermissionGrantedRevokedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.PublicInMeetingChatReceivedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Public In-meeting Chat Received"))
         self.PublicInMeetingChatReceivedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"])
         alertsGroup.addItem(self.PublicInMeetingChatReceivedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.PrivateInMeetingChatReceivedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Private In-meeting Chat Received"))
         self.PrivateInMeetingChatReceivedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"])
         alertsGroup.addItem(self.PrivateInMeetingChatReceivedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.InMeetingFileUploadCompletedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("In-meeting File Upload Completed"))
         self.InMeetingFileUploadCompletedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"])
         alertsGroup.addItem(self.InMeetingFileUploadCompletedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.HostPrivilegeGrantedRevokedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Host Privilege Granted/Revoked"))
         self.HostPrivilegeGrantedRevokedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"])
         alertsGroup.addItem(self.HostPrivilegeGrantedRevokedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.ParticipantHasRaisedLoweredHandCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Participant Has Raised/Lowered Hand (Host Only)"))
         self.ParticipantHasRaisedLoweredHandCheckBox.SetValue(
             config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"])
         alertsGroup.addItem(
             self.ParticipantHasRaisedLoweredHandCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.RemoteControlPermissionGrantedRevokedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("Remote Control Permission Granted/Revoked"))
         self.RemoteControlPermissionGrantedRevokedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"])
         alertsGroup.addItem(
             self.RemoteControlPermissionGrantedRevokedCheckBox)
-        # Translators: a label of a checkbox in the settings dialog
         self.IMChatReceivedCheckBox = wx.CheckBox(
+            # Translators: a label of a checkbox in the settings dialog
             self, label=_("IM Chat Received"))
         self.IMChatReceivedCheckBox.SetValue(
             config.conf["zoomEnhancements"]["IMChatReceived"])
@@ -274,15 +274,17 @@ remoteControlPermissionGrantedRevokedRegEx = re.compile(
     "^You can control .+'s screen$")
 raisedLoweredHandRegEx = re.compile("^.* (has )?(raised|lowered) hand$")
 iMChatReceivedRegEx = re.compile(r"^.+, \d+ unread messages?")
-# coHostPrivilegeGrantedRevoked = re.compile("")
-# livestreamStartedStoppedRegEx = re.compile("")
-# qAndAQuestionReceivedRegEx = re.compile("")
-# qAndAAnswerReceivedRegEx = re.compile("")
-# roleChangedToPanelistRegEx = re.compile("")
-# roleChangedToAttendeeRegEx = re.compile("")
-
+"""
+coHostPrivilegeGrantedRevoked = re.compile("")
+livestreamStartedStoppedRegEx = re.compile("")
+qAndAQuestionReceivedRegEx = re.compile("")
+qAndAAnswerReceivedRegEx = re.compile("")
+roleChangedToPanelistRegEx = re.compile("")
+roleChangedToAttendeeRegEx = re.compile("")
+"""
 
 # A script category for the add -on
+
 # Translators: the name of the add-on category in input gestures
 SCRCAT_ZOOMENHANCEMENTS = _("Zoom Enhancements")
 
@@ -410,11 +412,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftMeeting"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Participant Has Joined/Left Meeting is %s" % state)
+        ui.message(_("Reporting Participant Has Joined/Left Meeting is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -428,12 +430,12 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] = not config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["ParticipantHasJoined/LeftWaitingRoom"] else _("off")
         ui.message(
             # Translators: a message reported for the user when toggling reporting a spicific alert
-            "Reporting Participant Has Joined/Left Waiting Room is %s" % state)
+            _("Reporting Participant Has Joined/Left Waiting Room is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -447,11 +449,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["AudioMutedByHost"] = not config.conf["zoomEnhancements"]["AudioMutedByHost"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["AudioMutedByHost"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["AudioMutedByHost"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Audio Muted By Host is %s" % state)
+        ui.message(_("Reporting Audio Muted By Host is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -465,11 +467,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["VideoStoppedByHost"] = not config.conf["zoomEnhancements"]["VideoStoppedByHost"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["VideoStoppedByHost"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Video Stopped By Host is %s" % state)
+        ui.message(_("Reporting Video Stopped By Host is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -483,12 +485,12 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] = not config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["ScreenSharingStarted/StoppedByParticipant"] else _("off")
         ui.message(
             # Translators: a message reported for the user when toggling reporting a spicific alert
-            "Reporting Screen Sharing Started/Stopped By Participant is %s" % state)
+            _("Reporting Screen Sharing Started/Stopped By Participant is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -502,11 +504,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["RecordingPermissionGranted/Revoked"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Recording Permission Granted/Revoked is %s" % state)
+        ui.message(_("Reporting Recording Permission Granted/Revoked is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -520,11 +522,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["PublicIn-meetingChatReceived"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Public In-meeting Chat Received is %s" % state)
+        ui.message(_("Reporting Public In-meeting Chat Received is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -538,11 +540,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] = not config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["PrivateIn-meetingChatReceived"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Private In-meeting Chat Received is %s" % state)
+        ui.message(_("Reporting Private In-meeting Chat Received is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -556,11 +558,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] = not config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["In-meetingFileUploadCompleted"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting In-meeting File Upload Completed is %s" % state)
+        ui.message(_("Reporting In-meeting File Upload Completed is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -574,11 +576,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] = not config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["HostPrivilegeGranted/Revoked"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Host Privilege Granted/Revoked is %s" % state)
+        ui.message(_("Reporting Host Privilege Granted/Revoked is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -592,11 +594,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] = not config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["ParticipantHasRaised/LoweredHand"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting Participant Has Raised/Lowered Hand is %s" % state)
+        ui.message(_("Reporting Participant Has Raised/Lowered Hand is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -610,12 +612,12 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] = not config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["RemoteControlPermissionGranted/Revoked"] else _("off")
         ui.message(
             # Translators: a message reported for the user when toggling reporting a spicific alert
-            "Reporting Remote Control Permission Granted/Revoked is %s" % state)
+            _("Reporting Remote Control Permission Granted/Revoked is %s") % state)
 
     @script(
         # Translators: a description for a command to toggle reporting a spicific alert
@@ -629,11 +631,11 @@ class AppModule(AppModule):
         if (config.conf["zoomEnhancements"]["alertsReportingMode"] != "custom"):
             return
         config.conf["zoomEnhancements"]["IMChatReceived"] = not config.conf["zoomEnhancements"]["IMChatReceived"]
-        # Translators: a label for on / off states for reporting a spicific alert
-        state = _(
-            "on") if config.conf["zoomEnhancements"]["IMChatReceived"] else _("off")
+        state =
+            # Translators: a label for on / off states for reporting a spicific alert
+            _("on") if config.conf["zoomEnhancements"]["IMChatReceived"] else _("off")
         # Translators: a message reported for the user when toggling reporting a spicific alert
-        ui.message("Reporting IM Chat Received is %s" % state)
+        ui.message(_("Reporting IM Chat Received is %s") % state)
 
     @script(
         # Translators: a description for a command to cycle between alerts reporting modes
