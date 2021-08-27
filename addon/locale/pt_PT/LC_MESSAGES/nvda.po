@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the zoomEnhancements package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zoomEnhancements 1.1.1\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-08-17 09:00+0000\n"
+"PO-Revision-Date: 2021-08-21 12:16+0100\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Equipa Portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
+"com> e Rui Fontes <Rui Fontes <rui.fontes@tiflotecnia.com> (21-08-2021)\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Translators: Title for the settings dialog
+msgid "Zoom Enhancements settings"
+msgstr "Configurações de melhorias para o zoom"
+
+#. Translators: the lable of the combobox in the settings dialog
+msgid "Alerts reporting mode"
+msgstr "Modo de comunicação de alertas"
+
+#. Translators: the text of the grouping in the settings dialog
+msgid ""
+"Choose which alerts should be reported (effective only when custom mode is "
+"selected)"
+msgstr ""
+"Escolha quais os alertas que devem ser comunicados (apenas válido quando o "
+"modo personalizado está seleccionado)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Meeting"
+msgstr "O Participante entrou/saiu desta Reunião"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Waiting Room"
+msgstr "O Participante entrou/saiu desta Sala de Espera"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Audio Muted by Host"
+msgstr "Áudio desligado pelo anfitrião"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Video Stopped by Host"
+msgstr "Vídeo interrompido pelo anfitrião"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Screen Sharing Started/Stopped by a Participant"
+msgstr "Partilha de ecrã iniciada/terminada por um Participante"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Recording Permission Granted/Revoked"
+msgstr "Permissão de Gravação Concedida/Revogada"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Public In-meeting Chat Received"
+msgstr "Conversação pública recebida na reunião "
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Private In-meeting Chat Received"
+msgstr "Conversação privada recebida na reunião "
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "In-meeting File Upload Completed"
+msgstr "Carregamento de Ficheiro In-meeting Completo"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Host Privilege Granted/Revoked"
+msgstr "Privilégio de Acolhimento Concedido/Revogado"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Raised/Lowered Hand (Host Only)"
+msgstr "O Participante Levantou/baixou a mão (Apenas anfitrião)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Remote Control Permission Granted/Revoked"
+msgstr "Autorização de Controlo Remoto Concedida/Revogada"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "IM Chat Received"
+msgstr "Entrada na conversação Recebida"
+
+#. A script category for the add -on
+#. Translators: the name of the add-on category in input gestures
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Zoom Enhancements"
+msgstr "Melhorias para o Zoom"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Report all alerts"
+msgstr "Comunicar todos os alertas"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Beep for alerts"
+msgstr "Bip para alertas"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Silence all alerts"
+msgstr "Silenciar todos os alertas"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Custom"
+msgstr "Personalizado"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left meeting alerts on / off"
+msgstr ""
+"Alternância de indicação de entrada e saída nesta reunião ligado / desligado"
+
+#. Translators: a label for on / off states for reporting a spicific alert
+msgid "on"
+msgstr "ligado"
+
+msgid "off"
+msgstr "desligado"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Meeting is %s"
+msgstr "A indicação de que O Participante entrou/saiu desta Reunião está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left Waiting Room alerts on / off"
+msgstr ""
+"Alternância de indicação de entrada e saída nesta sala de espera ligado / "
+"desligado"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
+msgstr ""
+"A indicação de que O Participante entrou/saiu desta sala de espera está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting audio muted by host alerts on / off"
+msgstr ""
+"Alterna a comunicação de alertas do anfitrião para áudio ligado/desligado."
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Audio Muted By Host is %s"
+msgstr "A indicação de que O áudio controlado pelo anfitrião está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting video stopped by host alerts on / off"
+msgstr "Indica se o anfitrião tem o vídeo ligado ou desligado."
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Video Stopped By Host is %s"
+msgstr "A indicação de que O vídeo controlado pelo anfitrião está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting screen sharing started / stopped by participant alerts "
+"on / off"
+msgstr ""
+"Alternância da partilha do ecrã de comunicação iniciada / interrompida pelo "
+"participante"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
+msgstr "A indicação de que a partilha de ecrã do Participante está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting recording permission granted / revoked alerts on / off"
+msgstr "Alternância da permissão de gravação concedida / revogada "
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Recording Permission Granted/Revoked is %s"
+msgstr "A indicação de que a permissão de gravação está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting public in-meeting chat received alerts on / off"
+msgstr ""
+"Alternância entre a recepção de conversas públicas ligadas ou desligadas"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Public In-meeting Chat Received is %s"
+msgstr ""
+"A indicação de que a participação de conversação pública nesta reunião está "
+"%s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting private in-meeting chat received alerts on / off"
+msgstr ""
+"Alternância entre a recepção de conversas privadas ligadas ou desligadas"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Private In-meeting Chat Received is %s"
+msgstr "indicação de recepção de Conversa Privada na Reunião está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting in-meeting file upload completed alerts on / off"
+msgstr ""
+"Alternância entre o relatório de carregamento de ficheiros na reunião e os "
+"alertas completados on / off"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting In-meeting File Upload Completed is %s"
+msgstr "indicação de que o carregamento do ficheiro está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting host privilege granted / revoked alerts on / off"
+msgstr "Alterna entre permissões do anfitrião ligadas ou desligadas"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Host Privilege Granted/Revoked is %s"
+msgstr "Indicação dos privilégios dados pelo anfitrião está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting participant raised / lowered hand alerts on / off"
+msgstr "Alterna entre levantamento e abaixamento da mão ligado ou desligado"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Raised/Lowered Hand is %s"
+msgstr "Indicação de que o Participante Levantou/baixou a mão está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting remote control permission granted /revoked alerts on / off"
+msgstr "Alterna entre permissão remota ligada ou desligada"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Remote Control Permission Granted/Revoked is %s"
+msgstr "Indicação de controlo remoto está %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting IM chat received alerts on / off"
+msgstr "Alterna entre recepção de conversações ligada ou desligada."
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting IM Chat Received is %s"
+msgstr "Indicação de entrada na conversação está %s"
+
+#. Translators: a description for a command to cycle between alerts reporting modes
+msgid ""
+"Toggles between reporting alerts as usual, beeping for the alert, silencing "
+"alerts completely, or custom mode, where you can choose which alerts are "
+"reported and which aren't."
+msgstr ""
+"Alterna entre a comunicação de alertas como de costume, apitar para o "
+"alerta, silenciar completamente os alertas, ou modo personalizado, onde "
+"pode escolher quais os alertas que são comunicados e quais os que não são."
+
+#. Translators: a description for a command to move the focus in / out of the remote controlled screen
+msgid "Moves focus in / out of the remote controlled screen"
+msgstr "Move o foco para dentro / fora do ecrã controlado à distância"
+
+#. Translators: a description for a command to show the add-on settings dialog
+msgid "Shows Zoom enhancements settings dialog"
+msgstr "Mostra o diálogo de melhorias do Zoom"
+
+#. Translators: a description for a command to show chat history dialog
+msgid "Shows chat history dialog"
+msgstr "Mostra o diálogo do histórico da conversação"
+
+#. Translaters: the title of the chat history dialog
+msgid "Chat history"
+msgstr "Histórico da conversação"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"An add-on which aims to enhance the experience while using Zoom and NVDA"
+msgstr ""
+"Um extra que visa melhorar a experiência durante a utilização de Zoom e NVDA"
