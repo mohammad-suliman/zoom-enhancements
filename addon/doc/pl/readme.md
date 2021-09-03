@@ -31,7 +31,7 @@ typu. Uwaga! Działają tylko w trybie użytkownika.
   poczekalnię. (Widoczne tylko dla organizatora)
 * NVDA + Ctrl + 3: Organizator wyciszył audio.
 * NVDA + Ctrl + 4: Organizator zatrzymał wideo.
-* NVDA + Ctrl + 5: Uczestnik rozpoczął/zatrzymał dzielenie ekranu.
+* NVDA + Ctrl + 5: Uczestnik rozpoczął/zatrzymał udostępnianie ekranu.
 * NVDA + Ctrl + 6: Nadano/odebrano uprawnienia do nagrywania.
 * NVDA + Ctrl + 7: Otrzymano publiczną wiadomość czatu.
 * NVDA + Ctrl + 8: Otrzymano prywatną wiadomość czatu.
