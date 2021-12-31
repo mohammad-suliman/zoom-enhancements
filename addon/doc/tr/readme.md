@@ -35,18 +35,19 @@ kullanılabilir. Not: bu ayar, sadece özel mod seçiliyken etkilidir.
 * NVDA + Ctrl + 5: Bir katılımcı tarafından ekran Paylaşımı
   Başlatıldı/Durduruldu
 * NVDA + Ctrl + 6: Kayıt İzni Verildi/İptal Edildi
-* NVDA + Ctrl + 7: Herkese Açık Toplantı İçi Sohbet Alındı
-* NVDA + Ctrl + 8: Özel Toplantı İçi Sohbet Alındı
+* NVDA + Ctrl + 7: Herkese Açık Toplantı İçi Sohbet mesajı Alındı
+* NVDA + Ctrl + 8: Özel Toplantı İçi Sohbet mesajı Alındı
 * NVDA + Ctrl + 9: Toplantı İçi Dosya Yüklemesi Tamamlandı
-* NVDA + Ctrl + 0:Sunum izni Verildi/İptal Edildi
+* NVDA + Ctrl + 0: Sunum izni Verildi/İptal Edildi
 * NVDA + Shift + Ctrl + 1: Katılımcı Elini Kaldırdı/İndirdi (Yalnızca
   Toplantı Sahibi)
 * NVDA + Shift + Ctrl + 2: Uzaktan Kontrol İzni Verildi/İptal Edildi
 * NVDA + Shift + Ctrl + 3: IM sohbet mesajı alındı
 
 
-Eklentinin istenen şekilde çalışması için Zoom erişilebilirlik ayarlarında
-tüm uyarı türlerini Bildir seçeneğinin işaretli olduğuna emin olun. 
+Eklentinin istenen şekilde çalışması için Zoom erişilebilirlik
+iyileştirmeleri ayarlarında tüm uyarı türlerini Bildir seçeneğinin işaretli
+olduğuna emin olun. 
 
 ## Eklenti iletişim kutusunu açmak için klavye kısayolu:
 
