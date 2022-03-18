@@ -1,50 +1,53 @@
-# Verbesserung für Zoom-Barrierefreiheit #
+# Barrierefreie Zoom-Verbesserung #
 
 * Autoren: Mohamad Suliman, Eilana Benish
 * [Stabile Version herunterladen][1]
 * NVDA-Kompatibilität: 2018.4 bis 2020.2
 
-Diese Erweiterung verbessert die Zoom-Erfahrung für NVDA-Nutzer in dem
-Tastenkombinationen für Meldungen bei verschiedenen Veranstaltungen zur
-Verfügung gestellt werden, der Prozess der Fernsteuerung wird viel
-bedienbarer und mehr.
+Diese Erweiterung verbessert die Erfahrung mit Zoom für Nutzerinnen und
+Nutzer von NVDA, in dem Tastenkombinationen für Benachrichtigungen bei
+verschiedenen Ereignissen zur Verfügung gestellt werden. Der Prozess der
+Fernsteuerung wird dadurch bedienbarer und vieles mehr.
 
-## Tastenkombinationen zur Kontrolle von Meldungen in Veranstaltungen 
+## Tastenkombinationen zur Kontrolle von Ereignis-Benachrichtigungen
 
-* NVDA+Umschalt+A: Wechselt zwischen mehreren Modi zur Meldungs-Ansage. Die
-  folgenden Modi sind verfügbar:
+* NVDA+Umschalt+A: Wechselt zwischen mehreren Modi der
+  Benachrichtigungen. Die folgenden Modi sind verfügbar:
 
-    * Alle Meldungen ansagen: Hier werden wie voreingestellt alle Meldungen
-      angesagt
-    * Piepton bei Meldungen: Für jede Meldung, die Zoom anzeigt, wird ein
-      Piepton ausgegeben
-    * Alle Meldungen stummschalten: Hier ignoriert NVDA alle Meldungen
-    * Eigene Auswahl: Hier kann der Nutzer selbst festlegen, über weelche
-      Meldungen er informiert werden möchte und welche ignoriert werden
-      sollen. Dies kann im Einstellungs-Dialog der Erweiterung oder über die
-      entsprechende Tastenkombination festgelegt werden
+    * Alle Benachrichtigungen mitteilen: Hier werden wie voreingestellt alle
+      Benachrichtigungen mitgeteilt
+    * Piepton bei Benachrichtigung: Für jede Benachrichtigung, die Zoom
+      anzeigt, wird ein Piepton ausgegeben
+    * Alle Benachrichtigungen stummschalten: Hier ignoriert NVDA alle
+      Benachrichtigungen
+    * Eigene Auswahl: Hier kann die Nutzerin oder der Nutzer selbst
+      festlegen, über welche Benachrichtigungen er oder sie informiert
+      werden möchte und welche ignoriert werden sollen. Dies kann im
+      Einstellungs-Dialogfeld der Erweiterung oder über die entsprechende
+      Tastenkombination festgelegt werden
 
-Die folgenden Tastenkombinationen stehen zur Verfügung, um die Ansage von
-Meldungstypen ein- oder auszuschalten, sofern der Modus "persönliche
-Auswahl" aktiviert ist:
+Die folgenden Tastenkombinationen stehen zur Verfügung, um die Mitteilung
+von Benachrichtigungsarten ein- oder auszuschalten, sofern der Modus
+"persönliche Auswahl" aktiviert ist:
 
-* NVDA+Strg+1: Teilnehmer hat die Besprechung betreten/verlassen (nur
+* NVDA+Strg+1: Teilnehmer hat das Meeting betreten/verlassen (nur
   Veranstalter)
-* NVDA+Strg+2: Teilnehmer hat den Warteraum betreten/verlassen (nur
+* NVDA+Strg+2: Teilnehmer hat den Wartebereich betreten/verlassen (nur
   Veranstalter)
-* NVDA+Strg+3: Ton durch den Veranstalter stummgeschalten
+* NVDA+Strg+3: Audio durch den Veranstalter stummgeschaltet
 * NVDA+Strg+4: Video durch den Veranstalter gestoppt
-* NVDA+Strg+5: Bildschirm teilen durch einen Teilnehmer gestartet/gestoppt
-* NVDA+Strg+6: Erlaubnis zur Aufname genehmigt/untersagt
-* NVDA+Strg +7: Öffentliche Chat-Nachricht (in einer Veranstaltung) erhalten
-* NVDA+Strg+8: Private Chat-Nachricht (innerhalb der Veranstaltung) erhalten
+* NVDA+Strg+5: Bildschirm-Freigabe durch Teilnehmer gestartet/gestoppt
+* NVDA+Strg+6: Aufzeichnungsgenehmigung gewährt oder widerrufen
+* NVDA+Strg +7: Öffentliche Chat-Nachricht (während einer Veranstaltung)
+  erhalten
+* NVDA+Strg+8: Private Chat-Nachricht (während einer Veranstaltung) erhalten
 * NVDA+Strg+9: Datei innerhalb der Veranstaltung hochgeladen
-* NVDA+Strg+0: Ernennung zum Veranstalter erhalten/zurückgezogen
+* NVDA+Strg+0: Ernennung zum Veranstalter gewährt oder widerrufen
 * NVDA+Umschalt+Strg+1: Teilnehmer hat die Hand gehoben/gesenkt (nur
   Veranstalter)
-* NVDA+Umschalt+Strg+2: Genehmigung der Fernsteuerung erhalten/zurückgezogen
+* NVDA+Umschalt+Strg+2: Fernsteuerungsgenehmigung gewährt oder widerrufen
   (nur Veranstalter)
-* NVDA+Umschalt+Strg+3: Direkt-chat-nachricht erhalten
+* NVDA+Umschalt+Strg+3: Chat-Nachricht innerhalb des Meetings erhalten
 
 
 Beachten Sie, dass in den Zoom-Einstellungen alle Meldungen aktiviert sein
@@ -56,24 +59,27 @@ NVDA+Z öffnet den Dialog der Erweiterung!
 
 In diesem Dialog können Sie:
 
-* Feststellen, welche Meldungen angesagt oder nicht angesagt werden
-* Wählen Sie die Meldungstüpen, über welche Sie informiert werden wollen
-* Wähle auszugebende Meldungen
-* Persönliche Änderungen speichern
+* Feststellen, welche Benachrichtigungen mitgeteilt oder nicht mitgeteilt
+  werden
+* Wählen Sie die Benachrichtigungsarten aus, über die Sie informiert werden
+  möchten
+* Wählen Sie den Benachrichtigungsmodus aus
+* Benutzerdefinierte Änderungen speichern
 
 ## Fernsteuerung 
 
-Sofern man eine Steuerungs-Erlaubnis erhalten hat, bewegt NVDA+o den Fokus
-in und aus dem zu kontrollierenden Bildschirm
+Sofern man eine Fernsteuerungsgenehmigung erhalten hat, bewegt NVDA+O den
+Fokus in und aus dem zu kontrollierenden Bildschirm
 
 Bitte beachten Sie, dass der Fokus auf einem Meeting-Element sein sollte,
 damit Sie einen anderen Bildschirm fernsteuern können
 
 ## Wichtiger Hinweis
 
-Momentan funktioniert das Feature der benutzerspezifischen Meldungsauswahl,
-bei dem der Nutzer selbst festlegen kann, welche Meldungen er mitbekommen
-möchte nur, wenn die Sprache von Zoom auf Englisch eingestellt ist.
+Momentan funktioniert das Feature der benutzerspezifischen Auswahl der
+Benachrichtigungen nur, bei dem der/die Nutzer/in selbst festlegen kann,
+welche Benachrichtigungen er/sie erhalten möchte, wenn die Sprache von Zoom
+auf Englisch eingestellt ist.
 
 [[!tag dev stable]]
 

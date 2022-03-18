@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zoomEnhancements 1.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2021-12-12 08:39+0100\n"
+"PO-Revision-Date: 2022-03-13 23:06+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -51,7 +51,7 @@ msgstr "Video vom Gastgeber gestoppt"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Screen Sharing Started/Stopped by a Participant"
-msgstr "Bildschirmfreigabe wurde von einem Teilnehmer gestartet/gestoppt"
+msgstr "Bildschirm-Freigabe wurde von einem Teilnehmer gestartet/gestoppt"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Recording Permission Granted/Revoked"
@@ -138,6 +138,8 @@ msgstr ""
 #, python-format
 msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
 msgstr ""
+"Benachrichtigung über Teilnehmer hat den Wartebereich betreten/verlassen "
+"ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
@@ -148,7 +150,7 @@ msgstr ""
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Audio Muted By Host is %s"
-msgstr ""
+msgstr "Benachrichtigung über Audio stummgeschaltet von Gastgeber ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting video stopped by host alerts on / off"
@@ -159,62 +161,67 @@ msgstr ""
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Video Stopped By Host is %s"
-msgstr ""
+msgstr "Benachrichtigung über Video gestoppt von Gastgeber ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting screen sharing started / stopped by participant alerts "
 "on / off"
 msgstr ""
-"Schaltet die Benachrichtigung der Bildschirmfreigabe ein/aus, die von "
-"Teilnehmerbenachrichtigungen gestartet/gestoppt wurde"
+"Schaltet die Benachrichtigung der Bildschirm-Freigabe ein oder aus, die von "
+"Teilnehmerbenachrichtigungen gestartet oder gestoppt wurde"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
 msgstr ""
+"Benachrichtigung über Bildschirm-Freigabe gestartet/gestoppt von Teilnehmer "
+"ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting recording permission granted / revoked alerts on / off"
 msgstr ""
-"Aktiviert/deaktiviert die Benachrichtigungen für die Berechtigung zum "
+"Aktiviert oder deaktiviert die Benachrichtigungen für die Berechtigung zum "
 "Aufzeichnen, die erteilt/entzogen wurde"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Recording Permission Granted/Revoked is %s"
 msgstr ""
+"Benachrichtigung über Aufzeichnungsgenehmigung gewärht oder widerrufen ist "
+"%s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
 msgstr ""
-"Schaltet die Benachrichtigungen im öffentlichen In-Meeting-Chat ein/aus"
+"Schaltet die Benachrichtigungen im öffentlichen In-Meeting-Chat ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Public In-meeting Chat Received is %s"
-msgstr ""
+msgstr "Benachrichtigung über öffentlicher Chat-Empfang im Meeting ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting private in-meeting chat received alerts on / off"
-msgstr "Schaltet die Benachrichtigungen im privaten In-Meeting-Chat ein/aus"
+msgstr ""
+"Schaltet die Benachrichtigungen im privaten In-Meeting-Chat ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Private In-meeting Chat Received is %s"
-msgstr ""
+msgstr "Benachrichtigung über privater Chat-Empfang im Meeting ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
 msgstr ""
 "Schaltet die Benachrichtigungen über abgeschlossene Datei-Uploads im "
-"Meeting ein/aus"
+"Meeting ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting In-meeting File Upload Completed is %s"
-msgstr ""
+msgstr "Benachrichtigung über Datei-Upload abgeschlossen im Meeting ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting host privilege granted / revoked alerts on / off"
@@ -226,25 +233,32 @@ msgstr ""
 #, python-format
 msgid "Reporting Host Privilege Granted/Revoked is %s"
 msgstr ""
+"Benachrichtigung über Gastgebergenehmigung gewährt oder widerrufen ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting participant raised / lowered hand alerts on / off"
 msgstr ""
+"Schaltet die Benachrichtigung über Teilnehmer hat die Hand gehoben/gesenkt "
+"ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Raised/Lowered Hand is %s"
-msgstr ""
+msgstr "Benachrichtigung über Teilnehmer hat die Hand gehoben/gesenkt ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting remote control permission granted /revoked alerts on / off"
 msgstr ""
+"Schaltet die Benachrichtigung über gewährte oder widerrufene "
+"Fernsteuerungsgenehmigungen ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Remote Control Permission Granted/Revoked is %s"
 msgstr ""
+"Benachrichtigung über Fernsteuerungsgenehmigung gewährt oder widerrufen ist "
+"%s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting IM chat received alerts on / off"
@@ -253,7 +267,7 @@ msgstr "Schaltet die Benachrichtigungen für In-Meeting-Chats ein/aus"
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting IM Chat Received is %s"
-msgstr ""
+msgstr "Benachrichtigung über Chat-Empfang im Meeting ist %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
 msgid ""
@@ -261,6 +275,10 @@ msgid ""
 "alerts completely, or custom mode, where you can choose which alerts are "
 "reported and which aren't."
 msgstr ""
+"Schaltet um zwischen der üblichen Benachrichtigungen von Alarmen, dem "
+"Piepton für den Alarm, der vollständigen Unterdrückung von Alarmen oder dem "
+"benutzerdefinierten Modus, in dem Sie auswählen können, welche Alarme "
+"gemeldet werden und welche nicht."
 
 #. Translators: a description for a command to move the focus in / out of the remote controlled screen
 msgid "Moves focus in / out of the remote controlled screen"
