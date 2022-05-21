@@ -12,11 +12,6 @@ import ui
 from logHandler import log
 import config
 import api
-import controlTypes
-try:
-    from controlTypes import role
-except ImportError:
-    pass
 import mouseHandler
 import winUser
 import addonHandler
@@ -25,6 +20,12 @@ from .regexs import *
 import datetime
 import gui
 from gui import NVDASettingsDialog
+import controlTypes as ct
+if hasattr(ct, 'Role'):
+    roles = ct.Role
+else:
+    shortRolePairs = [(x.split("ROLE_")[1], getattr(ct, x)) for x in dir(ct) if x.startswith("ROLE_")]
+    roles = type('Enum', (), dict(shortRolePairs))
 
 
 def initConfiguration():
@@ -161,11 +162,7 @@ class AppModule(AppModule):
 
     def event_nameChange(self, obj, nextHandler):
         nextHandler()
-        try:
-            ROLE_STATICTEXT = role.Role.STATICTEXT
-        except NameError:
-            ROLE_STATICTEXT = controlTypes.ROLE_STATICTEXT
-        if obj.role == ROLE_STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
+        if obj.role == roles.STATICTEXT and obj.windowClassName == "zBubbleBaseClass":
             if self.ricievedChatPrefix:
                 obj.name = self.chatPrefixText + ": " + obj.name
                 self.ricievedChatPrefix = False
@@ -174,10 +171,7 @@ class AppModule(AppModule):
                 self.chatPrefixText = obj.name
                 self.ricievedChatPrefix = True
                 return
-            try:
-                obj.role = role.Role.ALERT
-            except NameError:
-                obj.role = controlTypes.ROLE_ALERT
+            obj.role = roles.ALERT
             eventHandler.queueEvent("alert", obj)
 
     scriptCategory = SCRCAT_ZOOMENHANCEMENTS
@@ -422,57 +416,6 @@ class AppModule(AppModule):
         currentMode = (currentMode + 1) % 4
         config.conf["zoomEnhancements"]["alertsReportingMode"] = alertModeToLabel[currentMode]
         ui.message(alertModeToLabel[currentMode])
-
-    @script(
-        # Translators: a description for a command to move the focus in / out of the remote controlled screen
-        description=_("Moves focus in / out of the remote controlled screen"),
-        gesture="kb:NVDA+o"
-    )
-    def script_remoteControl(self, gesture):
-        focus = api.getFocusObject()
-        try:
-            ROLE_UNKNOWN = role.Role.UNKNOWN
-        except NameError:
-            ROLE_UNKNOWN = controlTypes.ROLE_UNKNOWN
-        if focus.windowClassName.startswith("CASView_0x") and focus.role == ROLE_UNKNOWN:
-            try:
-                newFocus = focus.parent.parent.parent.parent.parent.previous.firstChild.firstChild.firstChild
-                self._clickObject(newFocus)
-                return
-            except:
-                return
-        shareContentWindow = self._getShareContentWindow()
-        if shareContentWindow:
-            self._clickObject(shareContentWindow)
-        else:
-            log.debugWarning("Couldn't find share content window")
-
-    def _clickObject(self, obj):
-        api.moveMouseToNVDAObject(obj)
-        mouseHandler.executeMouseEvent(
-            winUser.MOUSEEVENTF_LEFTDOWN, 0, 0)
-        mouseHandler.executeMouseEvent(
-            winUser.MOUSEEVENTF_LEFTUP, 0, 0)
-
-    def _getShareContentWindow(self):
-        focus = api.getFocusObject()
-        try:
-            ROLE_WINDOW = role.Role.WINDOW
-        except NameError:
-            ROLE_WINDOW = controlTypes.ROLE_WINDOW
-        try:
-            shareContentWindow = focus.parent.parent
-            if shareContentWindow.name == "Share Content" and shareContentWindow.role == ROLE_WINDOW:
-                return shareContentWindow
-        except:
-            pass
-        try:
-            meetingToolsWindow = focus.parent.parent.parent
-            if meetingToolsWindow.name != "Meeting Tools":
-                meetingToolsWindow = focus.parent.parent.parent.parent.parent
-            return meetingToolsWindow.next.firstChild.firstChild
-        except:
-            pass
 
     def _handleChatMessage(self, alert):
         now = datetime.datetime.now()

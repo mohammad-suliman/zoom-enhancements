@@ -2,7 +2,7 @@
 
 By: Mohamad Suliman and Eilana Benish
 
-This add-on will improve the experience of using Zoom for NVDA users by providing keyboard shortcuts to Handle alerts for Different events While In a meeting, make the process of remote control much more accessible and smoother, and more...
+This add-on improves the experience of using Zoom for NVDA users by providing keyboard shortcuts to Handle alerts for Different events While In a meeting, provides an alternative way to view the chat history in a meeting to overcome accessibility issues found sometimes in the native chat view of Zoom, and more...
 
 ## keyboard shortcuts for controlling alerts In meetings 
 
@@ -31,7 +31,7 @@ The following shortcuts can be used to toggle on / off the announcements of each
 
 Note that you need to leave reporting all alert types selected (in Zoom accessibility settings) to have the add-on function as expected.
 
-## Keyboard shortcut for Opening add on Dialogue 
+## Keyboard shortcut for Opening the add on Dialogue 
 
 NVDA + Z Opens the add-on dialog !
 
@@ -44,9 +44,10 @@ Using this dialog you can :
 
 ## Remote control 
 
-after a remote control permission is granted,  NVDA + O will move the focus in /Out of  the remote controlled screen.
+It has ben found out that Zoom now has a dedicated keyboard shortcuts to handle the remote control in an accessible manar. Use the following keyboard shortcuts to:
 
-Note that the focus should be on one of the meeting controls to be able to remote control the other screen!
+* Alt + Shift + r: to start remote control. Note that you need to have the permision of the remote controlled computer user to be able to proceed
+* Alt + Shift + g: to give up remote control or to revoke it
 
 ## Chat history dialog
 
@@ -56,4 +57,4 @@ The dialog is very simplistic, it has a list of the sent chat messages with thei
 
 ## An Important note
 
-Currently the feature of custom alerts mode where the user can choose which alerts they want to have and which not works with Zoom only when the user interface language is set to english.
+Currently, the feature of custom alerts mode (where the user can choose which alerts they want to have and which not) works with Zoom only when the user interface language is set to english.
