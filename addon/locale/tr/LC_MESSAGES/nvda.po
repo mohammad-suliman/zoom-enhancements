@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the zoomEnhancements package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zoomEnhancements 1.1.1\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-08-17 09:00+0000\n"
+"PO-Revision-Date: 2021-12-25 14:00+0300\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Ömer Yılmaz <yilmaz.omer2002@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. Translators: Title for the settings dialog
+msgid "Zoom Enhancements settings"
+msgstr "Zoom erişilebilirlik iyileştirmeleri ayarları"
+
+#. Translators: the lable of the combobox in the settings dialog
+msgid "Alerts reporting mode"
+msgstr "uyarı bildirim modu"
+
+#. Translators: the text of the grouping in the settings dialog
+msgid ""
+"Choose which alerts should be reported (effective only when custom mode is "
+"selected)"
+msgstr ""
+"Hangi uyarıların bildirileceğini seçin (seçimleriniz sadece özel mod "
+"seçliyken kullnılır.)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Meeting"
+msgstr "Katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Waiting Room"
+msgstr "Katılımcı Toplantı Odasına katıldı / Ayrıldı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Audio Muted by Host"
+msgstr "Ses toplantı sahibi tarafından kapatıldı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Video Stopped by Host"
+msgstr "Video toplantı sahibi Tarafından Durduruldu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Screen Sharing Started/Stopped by a Participant"
+msgstr "Bir katılımcı tarafından ekran Paylaşımı Başlatıldı/Durduruldu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Recording Permission Granted/Revoked"
+msgstr "Kayıt İzni Verildi/İptal Edildi"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Public In-meeting Chat Received"
+msgstr "Herkese Açık Toplantı İçi Sohbet mesajı Alındı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Private In-meeting Chat Received"
+msgstr "Özel Toplantı İçi Sohbet mesajı Alındı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "In-meeting File Upload Completed"
+msgstr "Toplantı İçi Dosya Yüklemesi Tamamlandı"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Host Privilege Granted/Revoked"
+msgstr "Sunum izni Verildi / İptal Edildi"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Raised/Lowered Hand (Host Only)"
+msgstr "Katılımcı Elini Kaldırdı/İndirdi (Yalnızca Toplantı Sahibi)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Remote Control Permission Granted/Revoked"
+msgstr "Uzaktan Kontrol İzni Verildi / İptal Edildi"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "IM Chat Received"
+msgstr "IM sohbet mesajı alındı"
+
+#. A script category for the add -on
+#. Translators: the name of the add-on category in input gestures
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Zoom Enhancements"
+msgstr "Zoom erişilebilirlik iyileştirmeleri"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Report all alerts"
+msgstr "Tüm uyarıları bildir"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Beep for alerts"
+msgstr "Uyarıları bip sesi ile bildir"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Silence all alerts"
+msgstr "Tüm uyarıları sustur"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Custom"
+msgstr "Özel"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left meeting alerts on / off"
+msgstr "Toplantıya katıldı / ayrıldı uyarı bildirimini açıp kapatır"
+
+#. Translators: a label for on / off states for reporting a spicific alert
+msgid "on"
+msgstr "açık"
+
+msgid "off"
+msgstr "kapalı"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Meeting is %s"
+msgstr "Katılımcı Toplantıya Katıldı/Toplantıdan Ayrıldı bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left Waiting Room alerts on / off"
+msgstr ""
+"Katılımcı Toplantı Odasına katıldı / Ayrıldı uyarılarının bildirimini açıp "
+"kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
+msgstr "Katılımcı Toplantı Odasına katıldı / Ayrıldı bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting audio muted by host alerts on / off"
+msgstr ""
+"Ses toplantı sahibi tarafından kapatıldı uyarılarının bildirimini açıp "
+"kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Audio Muted By Host is %s"
+msgstr "Ses toplantı sahibi tarafından kapatıldı bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting video stopped by host alerts on / off"
+msgstr ""
+"Video toplantı sahibi Tarafından Durduruldu uyarılarının bildirimini açıp "
+"kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Video Stopped By Host is %s"
+msgstr "Video toplantı sahibi Tarafından Durduruldu bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting screen sharing started / stopped by participant alerts "
+"on / off"
+msgstr "Ekran paylaşımı uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
+msgstr "Ekran paylaşımı uyarılarının bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting recording permission granted / revoked alerts on / off"
+msgstr ""
+"Kayıt İzni Verildi / İptal Edildi uyrılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Recording Permission Granted/Revoked is %s"
+msgstr "Kayıt İzni Verildi/İptal Edildi bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting public in-meeting chat received alerts on / off"
+msgstr ""
+"Herkese Açık Toplantı İçi Sohbet mesajı uyarılarının bildirimini açıp "
+"kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Public In-meeting Chat Received is %s"
+msgstr "Herkese Açık Toplantı İçi Sohbet mesajı bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting private in-meeting chat received alerts on / off"
+msgstr "Özel Toplantı İçi Sohbet mesajı uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Private In-meeting Chat Received is %s"
+msgstr "Özel Toplantı İçi Sohbet mesajı bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting in-meeting file upload completed alerts on / off"
+msgstr "Toplantı İçi Dosya Yüklemesi  uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting In-meeting File Upload Completed is %s"
+msgstr "Toplantı İçi Dosya Yüklemesi bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting host privilege granted / revoked alerts on / off"
+msgstr ""
+"Sunum izni Verildi / İptal Edildi uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Host Privilege Granted/Revoked is %s"
+msgstr "Sunum izni Verildi/İptal Edildi bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting participant raised / lowered hand alerts on / off"
+msgstr ""
+"Katılımcı Elini Kaldırdı / İndirdi uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Raised/Lowered Hand is %s"
+msgstr "Katılımcı Elini Kaldırdı/İndirdi bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting remote control permission granted /revoked alerts on / off"
+msgstr ""
+"Uzaktan Kontrol İzni Verildi / İptal Edildi uyarılarının bldirimini açıp "
+"kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Remote Control Permission Granted/Revoked is %s"
+msgstr "Uzaktan Kontrol İzni Verildi / İptal Edildi bildirimi %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting IM chat received alerts on / off"
+msgstr "IM sohbet mesajı alındı uyarılarının bildirimini açıp kapatır"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting IM Chat Received is %s"
+msgstr "IM sohbet mesajı alındı bildirimi %s"
+
+#. Translators: a description for a command to cycle between alerts reporting modes
+msgid ""
+"Toggles between reporting alerts as usual, beeping for the alert, silencing "
+"alerts completely, or custom mode, where you can choose which alerts are "
+"reported and which aren't."
+msgstr "IM sohbet mesajı alındı bildirimi %s"
+
+#. Translators: a description for a command to move the focus in / out of the remote controlled screen
+msgid "Moves focus in / out of the remote controlled screen"
+msgstr "Odağı uzaktan kontrol ekranına veya mevcut ekrana taşır"
+
+#. Translators: a description for a command to show the add-on settings dialog
+msgid "Shows Zoom enhancements settings dialog"
+msgstr ""
+"Zoom Erişilebilirlik Geliştirmeleri ayarları iletişim kutusunu gösterir"
+
+#. Translators: a description for a command to show chat history dialog
+msgid "Shows chat history dialog"
+msgstr "Sohbet geçmişi iletişim kutusunu gösterir"
+
+#. Translaters: the title of the chat history dialog
+msgid "Chat history"
+msgstr "Sohbet geçmişi"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"An add-on which aims to enhance the experience while using Zoom and NVDA"
+msgstr ""
+"Zoom ve NVDA kullanırken kullanıcı deneyimini geliştirmeyi amaçlayan bir "
+"eklenti"

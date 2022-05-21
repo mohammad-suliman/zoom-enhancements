@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the zoomEnhancements package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zoomEnhancements\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2021-08-17 09:00+0000\n"
+"PO-Revision-Date: 2021-10-31 17:55+0200\n"
+"Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
+"Language-Team: fi_FI <janikinnunen340@gmail.com>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: Title for the settings dialog
+msgid "Zoom Enhancements settings"
+msgstr "Zoomin laajennusten asetukset"
+
+#. Translators: the lable of the combobox in the settings dialog
+msgid "Alerts reporting mode"
+msgstr "Ilmoitusten ilmaisutila"
+
+#. Translators: the text of the grouping in the settings dialog
+msgid ""
+"Choose which alerts should be reported (effective only when custom mode is "
+"selected)"
+msgstr ""
+"Valitse, mitkä ilmoitukset puhutaan (vaikuttaa vain, jos mukautettu tila on "
+"valittuna)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Meeting"
+msgstr "Osallistuja on liittynyt/poistunut kokouksesta"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Joined/Left Waiting Room"
+msgstr "Osallistuja on liittynyt/poistunut odotushuoneesta"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Audio Muted by Host"
+msgstr "Isäntä mykisti äänen"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Video Stopped by Host"
+msgstr "Isäntä lopetti videon"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Screen Sharing Started/Stopped by a Participant"
+msgstr "Osallistuja aloitti/lopetti näytön jakamisen"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Recording Permission Granted/Revoked"
+msgstr "Tallennuslupa myönnetty/peruutettu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Public In-meeting Chat Received"
+msgstr "Julkinen kokouksen sisäinen keskustelu vastaanotettu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Private In-meeting Chat Received"
+msgstr "yksityinen kokouksen sisäinen keskustelu vastaanotettu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "In-meeting File Upload Completed"
+msgstr "Kokouksen sisäinen tiedostolataus valmis"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Host Privilege Granted/Revoked"
+msgstr "Isäntäoikeus myönnetty/peruutettu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Participant Has Raised/Lowered Hand (Host Only)"
+msgstr "Osallistuja on nostanut/laskenut käden (vain isäntä)"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "Remote Control Permission Granted/Revoked"
+msgstr "Etäkäyttöoikeus myönnetty/peruutettu"
+
+#. Translators: a label of a checkbox in the settings dialog
+msgid "IM Chat Received"
+msgstr "Pikaviestikeskustelu vastaanotettu"
+
+#. A script category for the add -on
+#. Translators: the name of the add-on category in input gestures
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Zoom Enhancements"
+msgstr "Zoomin laajennukset"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Report all alerts"
+msgstr "Puhu kaikki ilmoitukset"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Beep for alerts"
+msgstr "Ilmaise ilmoitukset äänimerkillä"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Silence all alerts"
+msgstr "Hiljennä kaikki ilmoitukset"
+
+#. Translators: a lable for alerts reporting mode
+msgid "Custom"
+msgstr "Mukautettu"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left meeting alerts on / off"
+msgstr ""
+"Ottaa  käyttöön tai poistaa käytöstä liittynyt/poistunut kokouksesta -"
+"ilmoitukset"
+
+#. Translators: a label for on / off states for reporting a spicific alert
+msgid "on"
+msgstr "käytössä"
+
+msgid "off"
+msgstr "pois käytöstä"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Meeting is %s"
+msgstr "Osallistuja liittynyt/poistunut kokouksesta -ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left Waiting Room alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä liittynyt/poistunut odotushuoneesta -"
+"ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
+msgstr "Osallistuja liittynyt/poistunut odotushuoneesta -ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting audio muted by host alerts on / off"
+msgstr "Ottaa käyttöön tai poistaa käytöstä isäntä mykisti äänen -ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Audio Muted By Host is %s"
+msgstr "Isännän mykistämän äänen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting video stopped by host alerts on / off"
+msgstr "Ottaa käyttöön tai poistaa käytöstä isäntä lopetti videon -ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Video Stopped By Host is %s"
+msgstr "Isäntä lopetti videon -ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting screen sharing started / stopped by participant alerts "
+"on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä näytön jakaminen aloitettu/lopetettu -"
+"ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
+msgstr "Osallistujan aloittaman/lopettaman näytön jakamisen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting recording permission granted / revoked alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä tallennuslupa myönnetty/peruutettu -"
+"ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Recording Permission Granted/Revoked is %s"
+msgstr "Tallennusluvan myöntämisen/peruuttamisen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting public in-meeting chat received alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä julkisen kokouksen sisäisen "
+"vastaanotetun keskustelun ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Public In-meeting Chat Received is %s"
+msgstr "Julkisen kokouksen sisäisen vastaanotetun keskustelun ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting private in-meeting chat received alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä  yksityisen kokouksen sisäisen "
+"vastaanotetun keskustelun ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Private In-meeting Chat Received is %s"
+msgstr "Yksityisen kokouksen sisäisen vastaanotetun keskustelun ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting in-meeting file upload completed alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä kokouksen sisäisen tiedostolatauksen "
+"valmistumisen ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting In-meeting File Upload Completed is %s"
+msgstr "Kokouksen sisäisen tiedostolatauksen valmistumisen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting host privilege granted / revoked alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä isäntäoikeuden myöntämisen/peruuttamisen "
+"ilmoitukset"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Host Privilege Granted/Revoked is %s"
+msgstr "Isäntäoikeuden myöntämisen/peruuttamisen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting participant raised / lowered hand alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä ilmoitukset osallistujan nostamasta/"
+"laskemasta kädestä"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Participant Has Raised/Lowered Hand is %s"
+msgstr "Osallistujan nostaman/laskeman käden ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid ""
+"Toggles reporting remote control permission granted /revoked alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä ilmoitukset etäkäyttöluvan myöntämisestä/"
+"peruuttamisesta"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting Remote Control Permission Granted/Revoked is %s"
+msgstr "Etäkäyttöluvan myöntämisen/peruuttamisen ilmoitus %s"
+
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting IM chat received alerts on / off"
+msgstr ""
+"Ottaa käyttöön tai poistaa käytöstä ilmoitukset vastaanotetusta "
+"pikaviestikeskustelusta"
+
+#. Translators: a message reported for the user when toggling reporting a spicific alert
+#, python-format
+msgid "Reporting IM Chat Received is %s"
+msgstr "Vastaanotetun pikaviestikeskustelun ilmoitus %s"
+
+#. Translators: a description for a command to cycle between alerts reporting modes
+msgid ""
+"Toggles between reporting alerts as usual, beeping for the alert, silencing "
+"alerts completely, or custom mode, where you can choose which alerts are "
+"reported and which aren't."
+msgstr ""
+"Vaihtaa ilmoitusasetukseksi puhumisen, äänimerkin, hiljentämisen tai "
+"mukautetun tilan, jossa voit valita, mitkä ilmoitukset ilmaistaan ja mitkä "
+"ei."
+
+#. Translators: a description for a command to move the focus in / out of the remote controlled screen
+msgid "Moves focus in / out of the remote controlled screen"
+msgstr "Siirtää kohdistuksen etäkäyttöruutuun tai siitä pois"
+
+#. Translators: a description for a command to show the add-on settings dialog
+msgid "Shows Zoom enhancements settings dialog"
+msgstr "Näyttää Zoomin laajennusten asetusvalintaikkunan"
+
+#. Translators: a description for a command to show chat history dialog
+msgid "Shows chat history dialog"
+msgstr "Näyttää keskusteluhistorian valintaikkunan"
+
+#. Translaters: the title of the chat history dialog
+msgid "Chat history"
+msgstr "Keskusteluhistoria"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"An add-on which aims to enhance the experience while using Zoom and NVDA"
+msgstr ""
+"Lisäosa, jonka tarkoituksena on parantaa Zoomin käyttökokemusta NVDA:n kanssa"
