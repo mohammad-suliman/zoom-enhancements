@@ -9,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
 "PO-Revision-Date: 2021-12-25 14:00+0300\n"
+"Last-Translator: Ömer Yılmaz <yilmaz.omer2002@gmail.com>\n"
+"Language-Team: \n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Ömer Yılmaz <yilmaz.omer2002@gmail.com>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.11\n"
 
 #. Translators: Title for the settings dialog
@@ -85,7 +85,6 @@ msgstr "Uzaktan Kontrol İzni Verildi / İptal Edildi"
 msgid "IM Chat Received"
 msgstr "IM sohbet mesajı alındı"
 
-#. A script category for the add -on
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -108,16 +107,17 @@ msgstr "Tüm uyarıları sustur"
 msgid "Custom"
 msgstr "Özel"
 
-#. Translators: a description for a command to toggle reporting a spicific alert
-msgid "Toggles reporting joined / left meeting alerts on / off"
-msgstr "Toplantıya katıldı / ayrıldı uyarı bildirimini açıp kapatır"
+#. Translators: the label of the off state for reporting an alert
+msgid "off"
+msgstr "kapalı"
 
-#. Translators: a label for on / off states for reporting a spicific alert
+#. Translators: the label of on state for reporting an alert
 msgid "on"
 msgstr "açık"
 
-msgid "off"
-msgstr "kapalı"
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left meeting alerts on / off"
+msgstr "Toplantıya katıldı / ayrıldı uyarı bildirimini açıp kapatır"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -171,8 +171,7 @@ msgstr "Ekran paylaşımı uyarılarının bildirimi %s"
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting recording permission granted / revoked alerts on / off"
-msgstr ""
-"Kayıt İzni Verildi / İptal Edildi uyrılarının bildirimini açıp kapatır"
+msgstr "Kayıt İzni Verildi / İptal Edildi uyrılarının bildirimini açıp kapatır"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -182,8 +181,7 @@ msgstr "Kayıt İzni Verildi/İptal Edildi bildirimi %s"
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
 msgstr ""
-"Herkese Açık Toplantı İçi Sohbet mesajı uyarılarının bildirimini açıp "
-"kapatır"
+"Herkese Açık Toplantı İçi Sohbet mesajı uyarılarının bildirimini açıp kapatır"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -250,15 +248,12 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "IM sohbet mesajı alındı bildirimi %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
+#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
-"alerts completely, or custom mode, where you can choose which alerts are "
+"alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr "IM sohbet mesajı alındı bildirimi %s"
-
-#. Translators: a description for a command to move the focus in / out of the remote controlled screen
-msgid "Moves focus in / out of the remote controlled screen"
-msgstr "Odağı uzaktan kontrol ekranına veya mevcut ekrana taşır"
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
@@ -280,3 +275,6 @@ msgid ""
 msgstr ""
 "Zoom ve NVDA kullanırken kullanıcı deneyimini geliştirmeyi amaçlayan bir "
 "eklenti"
+
+#~ msgid "Moves focus in / out of the remote controlled screen"
+#~ msgstr "Odağı uzaktan kontrol ekranına veya mevcut ekrana taşır"

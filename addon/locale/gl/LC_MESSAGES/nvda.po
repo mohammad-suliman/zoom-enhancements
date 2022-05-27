@@ -9,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
 "PO-Revision-Date: 2021-08-30 12:00+0200\n"
+"Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
+"Language-Team: \n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 3.0\n"
 
 #. Translators: Title for the settings dialog
@@ -30,8 +30,8 @@ msgid ""
 "Choose which alerts should be reported (effective only when custom mode is "
 "selected)"
 msgstr ""
-"Escolle que alertas deberían anunciarse (só efectivo cando está "
-"seleccionado o modo persoalizado)"
+"Escolle que alertas deberían anunciarse (só efectivo cando está seleccionado "
+"o modo persoalizado)"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Joined/Left Meeting"
@@ -85,7 +85,6 @@ msgstr "Permiso de Control Remoto Concedido/Revogado"
 msgid "IM Chat Received"
 msgstr "Chat IM Recibido"
 
-#. A script category for the add -on
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -108,17 +107,18 @@ msgstr "Silenciar tódalas alertas"
 msgid "Custom"
 msgstr "Persoalizado"
 
+#. Translators: the label of the off state for reporting an alert
+msgid "off"
+msgstr "desactivada"
+
+#. Translators: the label of on state for reporting an alert
+msgid "on"
+msgstr "activada"
+
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr ""
 "Activa ou desactiva o anunciado de alertas de uniuse / abandoou a reunión"
-
-#. Translators: a label for on / off states for reporting a spicific alert
-msgid "on"
-msgstr "activada"
-
-msgid "off"
-msgstr "desactivada"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -139,8 +139,7 @@ msgstr "A alerta dun Participante uniuse/abandoou a Sala de Agarda está %s"
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
 msgstr ""
-"Activa ou desactiva o anunciado de alertas de audio silenciado polo "
-"anfitrión"
+"Activa ou desactiva o anunciado de alertas de audio silenciado polo anfitrión"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -260,18 +259,15 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "A alerta Chat IM Recibido está %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
+#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
-"alerts completely, or custom mode, where you can choose which alerts are "
+"alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
 "Cambia entre anunciar alertas como habitualmente, pitar para as alertas, "
 "silenciar as alertas por completo, ou modo persoalizado, no que podes "
 "escoller que alertas se anuncian e cales non."
-
-#. Translators: a description for a command to move the focus in / out of the remote controlled screen
-msgid "Moves focus in / out of the remote controlled screen"
-msgstr "Move o foco dentro / fóra da pantalla controlada remotamente"
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
@@ -291,3 +287,6 @@ msgid ""
 "An add-on which aims to enhance the experience while using Zoom and NVDA"
 msgstr ""
 "Un complemento concebido para mellorar a experiencia ó usar Zoom e NVDA"
+
+#~ msgid "Moves focus in / out of the remote controlled screen"
+#~ msgstr "Move o foco dentro / fóra da pantalla controlada remotamente"

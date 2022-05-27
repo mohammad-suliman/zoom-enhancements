@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: zoomEnhancements 1.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2021-09-02 20:49+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-04-25 13:30+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
-"Language: pl\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,243 +19,247 @@ msgstr ""
 
 #. Translators: Title for the settings dialog
 msgid "Zoom Enhancements settings"
-msgstr "Ustawienia Zoom Enhancements"
+msgstr "Postavke za Poboljšanja za Zoom"
 
 #. Translators: the lable of the combobox in the settings dialog
 msgid "Alerts reporting mode"
-msgstr "Tryb ogłaszania alertów"
+msgstr "Modus javljanja upozorenja"
 
 #. Translators: the text of the grouping in the settings dialog
 msgid ""
 "Choose which alerts should be reported (effective only when custom mode is "
 "selected)"
 msgstr ""
-"Wskaż, które alerty mają być ogłaszane (Działa tylko w trybie użytkownika)"
+"Odaberi upozorenja koja se trebaju javljati (radi samo kada je odabran "
+"prilagođeni modus)"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Joined/Left Meeting"
-msgstr "Uczestnik dołączył do spotkania/opuścił spotkanie"
+msgstr "Sudionik se pridružio ili je napustio sastanak"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Joined/Left Waiting Room"
-msgstr "Uczestnik dołączył do poczekalni/opuścił poczekalnię"
+msgstr "Sudionik se pridružio ili je napustio čekaonicu"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Audio Muted by Host"
-msgstr "Organizator wyciszył audio"
+msgstr "Voditelj je isključio zvuk"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Video Stopped by Host"
-msgstr "Organizator zatrzymał wideo"
+msgstr "Voditelj je prekinuo videosnimku"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Screen Sharing Started/Stopped by a Participant"
-msgstr "Uczestnik rozpoczął/zatrzymał udostępnianie ekranu"
+msgstr "Sudionik je pokrenuo ili prekinuo dijeljenje ekrana"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Recording Permission Granted/Revoked"
-msgstr "Nadano/odebrano uprawnienia do nagrywania"
+msgstr "Dozvola za snimanje odobrena ili opozvana"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Public In-meeting Chat Received"
-msgstr "Otrzymano publiczną wiadomość czatu"
+msgstr "Primljen je javni razgovor u sastanku"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Private In-meeting Chat Received"
-msgstr "Otrzymano prywatną wiadomość czatu"
+msgstr "Primljen je privatni razgovor u sastanku"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "In-meeting File Upload Completed"
-msgstr "Wysyłanie pliku do spotkania zakończone"
+msgstr "Dovršen prijenos datoteke u sastanku"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Host Privilege Granted/Revoked"
-msgstr "Nadano/odebrano uprawnienia organizatora"
+msgstr "Prava voditelja odobrena/opozvana"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Raised/Lowered Hand (Host Only)"
-msgstr "Uczestnik podniósł/opuścił rękę (Widoczne tylko dla organizatora)"
+msgstr "Sudionik je dignuo/spusito ruku (samo voditelj)"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Remote Control Permission Granted/Revoked"
-msgstr "Nadano/odebrano uprawnienia do wsparcia zdalnego"
+msgstr "Dozvola za daljinsko upravljanje odobrena/opozvana"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "IM Chat Received"
-msgstr "Otrzymano wiadomość czatu"
+msgstr "Primljena je poruka u sastanku"
 
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Zoom Enhancements"
-msgstr "Zoom Enhancements"
+msgstr "Poboljšanja za Zoom"
 
 #. Translators: a lable for alerts reporting mode
 msgid "Report all alerts"
-msgstr "Ogłaszaj wszystkie alerty"
+msgstr "Javi sva upozorenja"
 
 #. Translators: a lable for alerts reporting mode
 msgid "Beep for alerts"
-msgstr "Ogłaszaj dźwiękiem"
+msgstr "Sviraj zvučni signal za upozorenja"
 
 #. Translators: a lable for alerts reporting mode
 msgid "Silence all alerts"
-msgstr "Wycisz wszystko"
+msgstr "Isključi zvuk za sva upozorenja"
 
 #. Translators: a lable for alerts reporting mode
 msgid "Custom"
-msgstr "Tryb użytkownika"
+msgstr "Prilagođeno"
 
 #. Translators: the label of the off state for reporting an alert
 msgid "off"
-msgstr "Wyłączone"
+msgstr "isključeno"
 
 #. Translators: the label of on state for reporting an alert
 msgid "on"
-msgstr "Włączone"
+msgstr "uključeno"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Dołączył do spotkania / opuścił "
-"spotkanie\""
+"Uključuje i isključuje javljanje upozorenja da se sudionik pridružio ili da "
+"je napustio sastanak"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Joined/Left Meeting is %s"
-msgstr ""
-"Ogłaszanie alertu \"Uczestnik dołączył do spotkania / opuścił spotkanie\" %s"
+msgstr "Javljanje „Sudionik se pridružio ili je napustio sastanak” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left Waiting Room alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Dołączył do poczekalni / opuścił "
-"poczekalnię\""
+"Uključuje i isključuje javljanje upozorenja da se sudionik pridružio ili da "
+"je napustio čekaonicu"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
-msgstr ""
-"Ogłaszanie alertu \"Uczestnik dołączył do poczekalni / opuścił poczekalnię\" "
-"%s"
+msgstr "Javljanje „Sudionik se pridružio ili je napustio čekaonicu” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
-msgstr "Włącza lub wyłącza ogłaszanie alertu \"Organizator wyciszył audio\""
+msgstr ""
+"Uključuje i isključuje javljanje upozorenja da je voditelj isključio zvuk"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Audio Muted By Host is %s"
-msgstr "Ogłaszanie alertu \"Organizator wyciszył audio\" %s"
+msgstr "Javljanje „Voditelj je isključio zvuk” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting video stopped by host alerts on / off"
-msgstr "Włącza lub wyłącza ogłaszanie alertu \"Organizator zatrzymał wideo\""
+msgstr ""
+"Uključuje i isključuje javljanje upozorenja da je voditelj prekinuo "
+"vidosnimku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Video Stopped By Host is %s"
-msgstr "Ogłaszanie alertu \"Organizator zatrzymał wideo\" %s"
+msgstr "Javljanje „Voditelj je prekinuo videosnimku” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting screen sharing started / stopped by participant alerts "
 "on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Uczestnik rozpoczął / zatrzymał "
-"udostępnianie ekranu\""
+"Uključuje i isključuje javljanje upozorenja da je sudionik pokrenuo ili "
+"prekinuo dijeljenja ekrana"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Screen Sharing Started/Stopped By Participant is %s"
-msgstr ""
-"Ogłaszanie alertu \"Uczestnik rozpoczął / zatrzymał udostępnianie ekranu\" %s"
+msgstr "Javljanje „Sudionik je pokrenuo/prekinuo dijeljenje ekrana” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting recording permission granted / revoked alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Nadano / odebrano uprawnienia do "
-"nagrywania\""
+"Uključuje i isključuje javljanje upozorenja da je dozvola za snimanje "
+"odobrena ili opozvana"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Recording Permission Granted/Revoked is %s"
-msgstr "Ogłaszanie alertu \"Nadano/odebrano uprawnienia do nagrywania\" %s"
+msgstr "Javljanje „Dozvola za snimanje odobrena/opozvana” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Otrzymano publiczną wiadomość czatu\""
+"Uključuje i isključuje javljanje upozorenja da je primljen javni razgovor u "
+"sastanku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Public In-meeting Chat Received is %s"
-msgstr "Ogłaszanie alertu \"Otrzymano publiczną wiadomość czatu\" %s"
+msgstr "Javljanje „Primljen je javni razgovor u sastanku” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting private in-meeting chat received alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Otrzymano prywatną wiadomość czatu\""
+"Uključuje i isključuje javljanje upozorenja da je primljen privatni razgovor "
+"u sastanku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Private In-meeting Chat Received is %s"
-msgstr "Ogłaszanie alertu \"Otrzymano prywatną wiadomość czatu\" %s"
+msgstr "Javljanje „Primljen je privatni razgovor u sastanku” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Wysyłanie pliku do spotkania "
-"zakończone\""
+"Uključuje i isključuje javljanje upozorenja da je dovršen prijenos datoteke "
+"u sastanku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting In-meeting File Upload Completed is %s"
-msgstr "Ogłaszanie alertu \"Wysyłanie pliku do spotkania zakończone\" %s"
+msgstr "Javljanje „Dovršen prijenos datoteke u sastanku” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting host privilege granted / revoked alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Nadano / odebrano uprawnienia "
-"organizatora\""
+"Uključuje i isključuje javljanje upozorenja da su prava voditelja odobrena "
+"ili opozvana"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Host Privilege Granted/Revoked is %s"
-msgstr "Ogłaszanie alertu \"Nadano / odebrano uprawnienia organizatora\" %s"
+msgstr "Javljanje „Prava voditelja odobrena/opozvana” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting participant raised / lowered hand alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Uczestnik podniósł / opuścił rękę\""
+"Uključuje i isključuje javljanje upozorenja da je sudionik dignuo ili "
+"spustio ruku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Raised/Lowered Hand is %s"
-msgstr "Ogłaszanie alertu \"Uczestnik podniósł / opuścił rękę\" %s"
+msgstr "Javljanje „Sudionik je dignuo/spusito ruku” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid ""
 "Toggles reporting remote control permission granted /revoked alerts on / off"
 msgstr ""
-"Włącza lub wyłącza ogłaszanie alertu \"Nadano / odebrano uprawnienia do "
-"wsparcia zdalnego\""
+"Uključuje i isključuje javljanje upozorenja da je daljinsko upravljanje "
+"odobreno ili opozvano"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Remote Control Permission Granted/Revoked is %s"
-msgstr ""
-"Ogłaszanie alertu \"Nadano / odebrano uprawnienia do wsparcia zdalnego\" %s"
+msgstr "Javljanje „Dozvola za daljinsko upravljanje odobrena/opozvana” je %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting IM chat received alerts on / off"
-msgstr "Włącza lub wyłącza ogłaszanie alertu \"Otrzymano wiadomość czatu\""
+msgstr ""
+"Uključuje i isključuje javljanje upozorenja da je primljen razgovor u "
+"sastanku"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting IM Chat Received is %s"
-msgstr "Ogłaszanie alertu \"Otrzymano wiadomość czatu\" %s"
+msgstr "Javljanje „Primljena je poruka u sastanku” je %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
 #, fuzzy
@@ -264,27 +268,29 @@ msgid ""
 "alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
-"Przełącza między trybami: Ogłaszaj wszystkie alerty, Ogłaszaj dźwiękiem, "
-"Wycisz wszystko, lub Trybem użytkownika, gdzie można samemu określić, które "
-"alerty mają być ogłaszane, a które nie."
+"Uključuje i isključuje javljanje upozorenja kao obično, sviranjem zvučnog "
+"signala, isključivanjem zvuka za sva upozorenja ili prilagođeno, čime je "
+"moguće odlučiti koja se upozorenja javljaju a koja ne."
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
-msgstr "Otwiera ustawienia Zoom enhancements"
+msgstr "Prikazuje dijaloški okvir postavki za poboljšanja za Zoom"
 
 #. Translators: a description for a command to show chat history dialog
 msgid "Shows chat history dialog"
-msgstr "Pokazuje historię czatu"
+msgstr "Prikazuje dijaloški okvir za povijest razgovora"
 
 #. Translaters: the title of the chat history dialog
 msgid "Chat history"
-msgstr "Historia czatu"
+msgstr "Povijesti razgovora"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid ""
 "An add-on which aims to enhance the experience while using Zoom and NVDA"
-msgstr "Ten dodatek ułatwia korzystanie z programu Zoom przy pomocy NVDA"
+msgstr ""
+"Cilj ovog dodatka je poboljšati doživljaj tijekom korištenja Zooma i NVDA "
+"čitača"
 
 #~ msgid "Moves focus in / out of the remote controlled screen"
-#~ msgstr "Przenosi kursor do / poza ekran kontrolowany zdalnie"
+#~ msgstr "Mijenja ekran daljinskog upravljanja u aktivno ili neaktivno stanje"

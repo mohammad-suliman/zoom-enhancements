@@ -85,7 +85,6 @@ msgstr "Fernsteuerungsberechtigung erteilt/entzogen"
 msgid "IM Chat Received"
 msgstr "In-Meeting-Chat erhalten"
 
-#. A script category for the add -on
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -108,18 +107,19 @@ msgstr "Alle Benachrichtigungen stummschalten"
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
+#. Translators: the label of the off state for reporting an alert
+msgid "off"
+msgstr "aus"
+
+#. Translators: the label of on state for reporting an alert
+msgid "on"
+msgstr "ein"
+
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr ""
 "Schaltet das Melden von Benachrichtigungen zu beigetretenen / verlassenen "
 "Besprechungen ein / aus"
-
-#. Translators: a label for on / off states for reporting a spicific alert
-msgid "on"
-msgstr "ein"
-
-msgid "off"
-msgstr "aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -138,8 +138,8 @@ msgstr ""
 #, python-format
 msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
 msgstr ""
-"Benachrichtigung über Teilnehmer hat den Wartebereich betreten/verlassen "
-"ist %s"
+"Benachrichtigung über Teilnehmer hat den Wartebereich betreten/verlassen ist "
+"%s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
@@ -189,8 +189,7 @@ msgstr ""
 #, python-format
 msgid "Reporting Recording Permission Granted/Revoked is %s"
 msgstr ""
-"Benachrichtigung über Aufzeichnungsgenehmigung gewärht oder widerrufen ist "
-"%s"
+"Benachrichtigung über Aufzeichnungsgenehmigung gewärht oder widerrufen ist %s"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
@@ -215,8 +214,8 @@ msgstr "Benachrichtigung über privater Chat-Empfang im Meeting ist %s"
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
 msgstr ""
-"Schaltet die Benachrichtigungen über abgeschlossene Datei-Uploads im "
-"Meeting ein oder aus"
+"Schaltet die Benachrichtigungen über abgeschlossene Datei-Uploads im Meeting "
+"ein oder aus"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -270,21 +269,16 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "Benachrichtigung über Chat-Empfang im Meeting ist %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
+#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
-"alerts completely, or custom mode, where you can choose which alerts are "
+"alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
 "Schaltet um zwischen der üblichen Benachrichtigungen von Alarmen, dem "
 "Piepton für den Alarm, der vollständigen Unterdrückung von Alarmen oder dem "
 "benutzerdefinierten Modus, in dem Sie auswählen können, welche Alarme "
 "gemeldet werden und welche nicht."
-
-#. Translators: a description for a command to move the focus in / out of the remote controlled screen
-msgid "Moves focus in / out of the remote controlled screen"
-msgstr ""
-"Verschiebt den Fokus in bzw. aus dem Bereich für den ferngesteuerten "
-"Bildschirm"
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
@@ -303,3 +297,8 @@ msgstr "Chat-Verlauf"
 msgid ""
 "An add-on which aims to enhance the experience while using Zoom and NVDA"
 msgstr "Mit dieser Erweiterung wird das Erlebnis mit Zoom und NVDA verbessert"
+
+#~ msgid "Moves focus in / out of the remote controlled screen"
+#~ msgstr ""
+#~ "Verschiebt den Fokus in bzw. aus dem Bereich für den ferngesteuerten "
+#~ "Bildschirm"

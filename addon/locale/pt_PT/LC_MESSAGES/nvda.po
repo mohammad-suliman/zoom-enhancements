@@ -9,14 +9,14 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
 "PO-Revision-Date: 2021-11-18 23:33+0000\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Equipa Portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
+"com> e Rui Fontes <Rui Fontes <rui.fontes@tiflotecnia.com> (21-08-2021)\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
-"Language-Team: Equipa Portuguesa do NVDA: Ângelo Abrantes <ampa4374@gmail."
-"com> e Rui Fontes <Rui Fontes <rui.fontes@tiflotecnia.com> (21-08-2021)\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -88,7 +88,6 @@ msgstr "Autorização de Controlo Remoto Concedida/Revogada"
 msgid "IM Chat Received"
 msgstr "Entrada na conversação Recebida"
 
-#. A script category for the add -on
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -111,17 +110,18 @@ msgstr "Silenciar todos os alertas"
 msgid "Custom"
 msgstr "Personalizado"
 
+#. Translators: the label of the off state for reporting an alert
+msgid "off"
+msgstr "desligado"
+
+#. Translators: the label of on state for reporting an alert
+msgid "on"
+msgstr "ligado"
+
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
 msgstr ""
 "Alternância de indicação de entrada e saída nesta reunião ligado / desligado"
-
-#. Translators: a label for on / off states for reporting a spicific alert
-msgid "on"
-msgstr "ligado"
-
-msgid "off"
-msgstr "desligado"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -253,18 +253,15 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "Indicação de entrada na conversação está %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
+#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
-"alerts completely, or custom mode, where you can choose which alerts are "
+"alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
 "Alterna entre a comunicação de alertas como de costume, apitar para o "
-"alerta, silenciar completamente os alertas, ou modo personalizado, onde "
-"pode escolher quais os alertas que são comunicados e quais os que não são."
-
-#. Translators: a description for a command to move the focus in / out of the remote controlled screen
-msgid "Moves focus in / out of the remote controlled screen"
-msgstr "Move o foco para dentro / fora do ecrã controlado à distância"
+"alerta, silenciar completamente os alertas, ou modo personalizado, onde pode "
+"escolher quais os alertas que são comunicados e quais os que não são."
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
@@ -284,3 +281,6 @@ msgid ""
 "An add-on which aims to enhance the experience while using Zoom and NVDA"
 msgstr ""
 "Um extra que visa melhorar a experiência durante a utilização de Zoom e NVDA"
+
+#~ msgid "Moves focus in / out of the remote controlled screen"
+#~ msgstr "Move o foco para dentro / fora do ecrã controlado à distância"

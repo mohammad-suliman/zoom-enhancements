@@ -9,12 +9,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
 "PO-Revision-Date: 2021-10-12 09:30+0200\n"
+"Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
+"Language-Team: \n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 3.0\n"
 
 #. Translators: Title for the settings dialog
@@ -85,7 +85,6 @@ msgstr "Tilladelse til fjernstyring givet/tilbagekaldt"
 msgid "IM Chat Received"
 msgstr "IM chat modtaget"
 
-#. A script category for the add -on
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -108,16 +107,17 @@ msgstr "Ignorér alle hændelser"
 msgid "Custom"
 msgstr "Tilpasset"
 
-#. Translators: a description for a command to toggle reporting a spicific alert
-msgid "Toggles reporting joined / left meeting alerts on / off"
-msgstr "Slår rapportering om tilmeldte / venstre mødevarsler til / fra"
+#. Translators: the label of the off state for reporting an alert
+msgid "off"
+msgstr "fra"
 
-#. Translators: a label for on / off states for reporting a spicific alert
+#. Translators: the label of on state for reporting an alert
 msgid "on"
 msgstr "på"
 
-msgid "off"
-msgstr "fra"
+#. Translators: a description for a command to toggle reporting a spicific alert
+msgid "Toggles reporting joined / left meeting alerts on / off"
+msgstr "Slår rapportering om tilmeldte / venstre mødevarsler til / fra"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
@@ -239,18 +239,15 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "Annoncering af IM-chat modtaget er %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
+#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
-"alerts completely, or custom mode, where you can choose which alerts are "
+"alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
 "Skifter mellem annoncering af meddelelser som normalt, bip efter "
 "meddelelsen, fuldstændig lydløse meddelelser eller tilpasset tilstand, hvor "
 "du kan vælge, hvilke meddelelser der skal oplyses."
-
-#. Translators: a description for a command to move the focus in / out of the remote controlled screen
-msgid "Moves focus in / out of the remote controlled screen"
-msgstr "Flytter fokus til eller væk fra den fjernstyrede skærm"
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
@@ -271,3 +268,6 @@ msgid ""
 msgstr ""
 "En tilføjelse, der har til formål at forbedre oplevelsen, mens du bruger "
 "Zoom sammen med NVDA"
+
+#~ msgid "Moves focus in / out of the remote controlled screen"
+#~ msgstr "Flytter fokus til eller væk fra den fjernstyrede skærm"
