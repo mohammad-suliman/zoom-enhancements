@@ -2,53 +2,58 @@
 
 * Autorzy: Mohamad Suliman, Eilana Benish
 * Pobierz [Wersja stabilna][1]
-* Zgodność z wersjami NVDA: 2018.4 do 2020.2
+* Zgodność z wersjami NVDA: od 2018.4 do 2022.1
 
 Ten dodatek ułatwia użytkownikom NVDA korzystanie z programu Zoom. Wprowadza
 skróty klawiszowe do obsługi alertów dla różnych zdarzeń podczas
 spotkania. Poprawia też jakość wsparcia zdalnego, które staje się bardziej
 dostępne.
 
-## Skróty klawiszowe do obsługi alertów podczas spotkań
+## skróty klawiaturowe służące do kontrolowania alertów w spotkaniach 
 
 * NVDA + Shift + A: przełącza między różnymi trybami ogłaszania
   alertów. Dostępne są następujące tryby:
 
-    * Tryb "Ogłaszaj wszystkie alerty", w którym każdy alert jest wymawiany.
-    * Tryb "Ogłaszaj dźwiękiem", w którym NVDA odtwarza krótki sygnał
-      dźwiękowy dla każdego alertu wyświetlanego przez Zoom.
-    * Tryb "Wycisz wszystko", w którym NVDA ignoruje każdy alert.
-    * "Tryb użytkownika", w którym można określić, jakie alerty mają być
-      sygnalizowane, a jakie nie. Należy to zrobić w oknie ustawień dodatku
-      lub za pomocą odpowiednich skrótów klawiszowych.
+    * Zgłoś wszystkie alerty w trybie, w którym wszystkie alerty są
+      zgłaszane jak zwykle
+    * Sygnał dźwiękowy dla alertów, w którym NVDA będzie odtwarzać krótki
+      sygnał dźwiękowy dla każdego alertu wyświetlanego w Zoom
+    * Wycisz wszystkie alerty, gdzie NVDA zignoruje wszystkie alerty
+    * Tryb niestandardowy, w którym użytkownik może dostosować, które alerty
+      chce mieć, a które nie. Można to zrobić za pomocą okna dialogowego
+      ustawień dodatku lub za pomocą dedykowanych skrótów klawiaturowych do
+      tego celu.
 
-Następujące skróty służą do włączania lub wyłączania alertów każdego
-typu. Uwaga! Działają tylko w trybie użytkownika.
+Następujące skróty mogą być używane do włączania / wyłączania ogłoszeń
+każdego typu alertu (należy pamiętać, że będzie to skuteczne po wybraniu
+trybu niestandardowego):
 
 * NVDA + Ctrl + 1: Uczestnik dołączył do spotkania/opuścił
   spotkanie. (Widoczne tylko dla organizatora)
 * NVDA + Ctrl + 2: Uczestnik dołączył do poczekalni/opuścił
   poczekalnię. (Widoczne tylko dla organizatora)
-* NVDA + Ctrl + 3: Organizator wyciszył audio.
-* NVDA + Ctrl + 4: Organizator zatrzymał wideo.
-* NVDA + Ctrl + 5: Uczestnik rozpoczął/zatrzymał udostępnianie ekranu.
-* NVDA + Ctrl + 6: Nadano/odebrano uprawnienia do nagrywania.
-* NVDA + Ctrl + 7: Otrzymano publiczną wiadomość czatu.
-* NVDA + Ctrl + 8: Otrzymano prywatną wiadomość czatu.
-* NVDA + Ctrl + 9: Wysyłanie pliku do spotkania zakończone.
-* NVDA + Ctrl + 0: Nadano/odebrano uprawnienia organizatora.
+* NVDA + Ctrl + 3: Dźwięk wyciszony przez hosta
+* NVDA + Ctrl + 4: Wideo zatrzymane przez hosta
+* NVDA + Ctrl + 5: Udostępnianie ekranu rozpoczęte/zatrzymane przez
+  uczestnika
+* NVDA + Ctrl + 6: Zezwolenie na nagrywanie udzielone/cofnięte
+* NVDA + Ctrl + 7: Otrzymano publiczny czat na spotkaniu
+* NVDA + Ctrl + 8: Otrzymano prywatny czat na spotkaniu
+* NVDA + Ctrl + 9: Przesyłanie pliku na spotkaniu zakończone
+* NVDA + Ctrl + 0: Przywilej hosta przyznany/odwołany
 * NVDA + Shift + Ctrl + 1: Uczestnik podniósł/opuścił rękę. (Widoczne tylko
   dla organizatora)
-* NVDA + Shift + Ctrl + 2: Nadano/odebrano uprawnienia do wsparcia zdalnego.
+* NVDA + Shift + Ctrl + 2: Udzielone/odwołane uprawnienie do zdalnego
+  sterowania
 * NVDA + Shift + Ctrl + 3: Otrzymano wiadomość czatu
 
 
 Uwaga! Aby dodatek działał poprawnie, należy zaznaczyć tryb "Ogłaszaj
 wszystkie alerty" w ustawieniach dostępności Zoom.
 
-## Skrót klawiszowy otwierający okno dodatku
+## Skrót klawiaturowy dla Otwieranie dodatku w oknie dialogowym 
 
-NVDA + Z otwiera okno dodatku.
+NVDA + Z Otwiera okno dialogowe dodatku!
 
 Można w nim:
 
@@ -57,15 +62,15 @@ Można w nim:
 * Wybrać tryb ogłaszania alertów
 * Zapisać zmiany urzytkownika
 
-## Wsparcie zdalne
+## Pilot 
 
-Po nadaniu uprawnień do wsparcia zdalnego, skrót NVDA + O przenosi kursor
-systemu na lub poza kontrolowany zdalnie ekran.
+po przyznaniu uprawnień do zdalnego sterowania NVDA + O przesunie ostrość w
+/ Poza zdalnie sterowany ekran
 
-Uwaga! Kursor systemu powinien znajdować się na jednej z kontrolek
-spotkania, aby można było kontrolować zdalnie inny ekran.
+Należy pamiętać, że fokus powinien znajdować się na jednej z kontrolek
+spotkania, aby móc zdalnie sterować drugim ekranem.
 
-## Ważne!
+## Ważna uwaga
 
 Funkcja Trybu Użytkownika pozwalająca określić, które alerty mają być
 ogłaszane, a które nie, działa tylko wtedy, gdy język interfejsu użytkownika

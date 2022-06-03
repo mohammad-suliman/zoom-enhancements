@@ -2,7 +2,7 @@
 
 * Autori: Mohamad Suliman, Eilana Benish
 * Preuzmi [stabilnu verziju][1]
-* NVDA kompatibilnost: od 2018.4 do 2020.2
+* NVDA kompatibilnost: od 2018.4 do 2022.1
 
 Ovaj dodatak pomaže korisnicima NVDA čitača koristiti Zoom. Omogućuje
 upotrebu tipkovničkih prečaca za upozorenja za razne događaje tijekom

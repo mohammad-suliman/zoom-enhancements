@@ -2,7 +2,7 @@
 
 * Yazarlar: Mohamad Suliman, Eilana Benish
 * [kararlı sürüm][1]ü indir
-* NVDA uyumluluğu: 2018.4 - 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 Bu eklenti, Zoom programının erişilebilirliğini arttıran özellikler
 içermektedir. Toplantılar sırasında farklı olaylardan gelen uyarıları daha

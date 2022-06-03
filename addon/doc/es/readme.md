@@ -2,7 +2,7 @@
 
 * Autores: Mohamad Suliman, Eilana Benish
 * Descargar [versión estable][1]
-* Compatibilidad con NVDA: de 2018.4 a 2020.2
+* Compatibilidad con NVDA: de 2018.4 a 2022.1
 
 Este complemento mejora la experiencia de usuario al utilizar Zoom con NVDA
 proporcionando atajos de teclado para gestionar las alertas de eventos

@@ -2,7 +2,7 @@
 
 * Autori: Mohamad Suliman, Eilana Benish
 * Scarica la [versione stabile][1]
-* Compatibilità con NVDA:: dalla versione 2018.4 alla 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 Questo add-on migliora l'esperienza di utilizzo di Zoom per gli utenti di
 NVDA, fornendo comandi da tastiera per gestire, durante una riunione, le

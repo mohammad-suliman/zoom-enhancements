@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zoomEnhancements 1.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2022-04-25 13:30+0200\n"
+"PO-Revision-Date: 2022-05-30 14:38+0200\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -262,7 +262,6 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "Javljanje „Primljena je poruka u sastanku” je %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
-#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
 "alerts completely, or custom mode where the user can choose which alerts are "
@@ -270,7 +269,7 @@ msgid ""
 msgstr ""
 "Uključuje i isključuje javljanje upozorenja kao obično, sviranjem zvučnog "
 "signala, isključivanjem zvuka za sva upozorenja ili prilagođeno, čime je "
-"moguće odlučiti koja se upozorenja javljaju a koja ne."
+"moguće odabrati koja se upozorenja javljaju a koja ne."
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"

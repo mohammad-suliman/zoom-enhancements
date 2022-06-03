@@ -2,7 +2,7 @@
 
 * 作者: Mohamad Suliman, Eilana Benish
 * 下载 [稳定版][1]
-* NVDA兼容版本: 2018.4 到 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 此插件通过提供键盘快捷键来处理不同事件的通知，从而改善了为NVDA 用户使用 Zoom 的体验。
 

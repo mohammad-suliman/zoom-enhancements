@@ -2,7 +2,7 @@
 
 * Forfattere: Mohamad Suliman, Eilana Benish
 * Download [stabil version][1]
-* NVDA -kompatibilitet: 2018.4 til 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 Denne tilføjelse forbedrer brugen af Zoom for NVDA-brugere ved at tilbyde
 tastaturgenveje til at håndtere meddelelser for forskellige hændelser, mens

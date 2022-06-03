@@ -2,7 +2,7 @@
 
 * Auteurs : Mohamad Suliman, Eilana Benish
 * Télécharger [version stable][1]
-* Compatibilité NVDA : 2018.4 à 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 Cette extension améliore l'expérience utilisateur lors de l'utilisation de
 Zoom avec NVDA fournissant des raccourcis clavier pour gérer les alertes

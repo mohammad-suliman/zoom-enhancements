@@ -2,7 +2,7 @@
 
 * Autores: Mohamad Suliman, Eilana Benish
 * Baixar [Versão estável][1]
-* Compatibilidade com o NVDA: 2018.4 a 2020.2
+* NVDA compatibility: 2018.4 to 2022.1
 
 Este extra melhora a experiência de utilização do Zoom para utilizadores do
 NVDA ao fornecer atalhos de teclado para tratar alertas para diferentes

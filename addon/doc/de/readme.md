@@ -2,7 +2,7 @@
 
 * Autoren: Mohamad Suliman, Eilana Benish
 * [Stabile Version herunterladen][1]
-* NVDA-Kompatibilität: 2018.4 bis 2020.2
+* NVDA-Kompatibilität: 2018.4 bis 2022.1
 
 Diese Erweiterung verbessert die Erfahrung mit Zoom für Nutzerinnen und
 Nutzer von NVDA, in dem Tastenkombinationen für Benachrichtigungen bei
@@ -53,7 +53,7 @@ von Benachrichtigungsarten ein- oder auszuschalten, sofern der Modus
 Beachten Sie, dass in den Zoom-Einstellungen alle Meldungen aktiviert sein
 müssen, damit die Erweiterung richtig funktioniert.
 
-## Tastenkürzel um den Dialog der Erweiterung aufzurufen 
+## Tastenkürzel um den Dialog der Erweiterung aufzurufen
 
 NVDA+Z öffnet den Dialog der Erweiterung!
 
@@ -66,7 +66,7 @@ In diesem Dialog können Sie:
 * Wählen Sie den Benachrichtigungsmodus aus
 * Benutzerdefinierte Änderungen speichern
 
-## Fernsteuerung 
+## Fernsteuerung
 
 Sofern man eine Fernsteuerungsgenehmigung erhalten hat, bewegt NVDA+O den
 Fokus in und aus dem zu kontrollierenden Bildschirm

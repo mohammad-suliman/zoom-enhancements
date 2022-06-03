@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zoomEnhancements\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2021-10-31 17:55+0200\n"
+"PO-Revision-Date: 2022-05-30 18:47+0200\n"
 "Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
 "Language-Team: fi_FI <janikinnunen340@gmail.com>\n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. Translators: Title for the settings dialog
 msgid "Zoom Enhancements settings"
-msgstr "Zoomin laajennusten asetukset"
+msgstr "Zoom-laajennusten asetukset"
 
 #. Translators: the lable of the combobox in the settings dialog
 msgid "Alerts reporting mode"
@@ -90,7 +90,7 @@ msgstr "Pikaviestikeskustelu vastaanotettu"
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Zoom Enhancements"
-msgstr "Zoomin laajennukset"
+msgstr "Zoom-laajennukset"
 
 #. Translators: a lable for alerts reporting mode
 msgid "Report all alerts"
@@ -260,19 +260,18 @@ msgid "Reporting IM Chat Received is %s"
 msgstr "Vastaanotetun pikaviestikeskustelun ilmoitus %s"
 
 #. Translators: a description for a command to cycle between alerts reporting modes
-#, fuzzy
 msgid ""
 "Toggles between reporting alerts as usual, beeping for the alert, silencing "
 "alerts completely, or custom mode where the user can choose which alerts are "
 "reported and which aren't."
 msgstr ""
-"Vaihtaa ilmoitusasetukseksi puhumisen, äänimerkin, hiljentämisen tai "
-"mukautetun tilan, jossa voit valita, mitkä ilmoitukset ilmaistaan ja mitkä "
-"ei."
+"Vaihtaa ilmoitusasetukseksi puhumisen tavalliseen tapaan, ilmaisemisen "
+"äänimerkillä, hiljentämisen kokonaan tai mukautetun tilan, jossa voit "
+"valita, mitkä ilmoitukset ilmaistaan ja mitkä ei."
 
 #. Translators: a description for a command to show the add-on settings dialog
 msgid "Shows Zoom enhancements settings dialog"
-msgstr "Näyttää Zoomin laajennusten asetusvalintaikkunan"
+msgstr "Näyttää Zoom-laajennusten asetusvalintaikkunan"
 
 #. Translators: a description for a command to show chat history dialog
 msgid "Shows chat history dialog"
