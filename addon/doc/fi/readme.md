@@ -1,4 +1,4 @@
-# Zoomin esteettömyysparannukset #
+# Zoomin saavutettavuusparannukset #
 
 * Tekijät: Mohamad Suliman ja Eilana Benish
 * Lataa [vakaa versio][1]
@@ -43,7 +43,7 @@ mukautettu tila on valittuna):
 
 
 Huomaa, että kaikki ilmoitukset on oltava valittuna Zoomin
-esteettömyysasetuksissa, jotta lisäosa toimii odotetulla tavalla.
+saavutettavuusasetuksissa, jotta lisäosa toimii odotetulla tavalla.
 
 ## Pikanäppäin lisäosan asetusvalintaikkunan avaamiseen
 
