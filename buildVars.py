@@ -24,7 +24,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("""An add-on which aims to enhance the experience while using Zoom and NVDA"""),
 	# version
-	"addon_version" : "1.1.2",
+	"addon_version" : "1.2",
 	# Author(s)
 	"addon_author" : u"Mohammad Suliman <mohmad.s93@gmail.com>, Eilana Benish <benish.ilana@gmail.com>",
 	# URL for the add-on documentation support
@@ -34,7 +34,7 @@ addon_info = {
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
 	"addon_minimumNVDAVersion" : "2018.4",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion" : "2022.1",
+	"addon_lastTestedNVDAVersion" : "2023.4",
 	# Add-on update channel (default is None, denoting stable releases, and for development releases, use "dev"; do not change unless you know what you are doing)
 	"addon_updateChannel" : None,
 }
