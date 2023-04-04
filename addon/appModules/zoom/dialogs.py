@@ -22,7 +22,7 @@ class SettingsPanel(gui.SettingsPanel):
     def makeSettings(self, settingsSizer):
         settingsSizerHelper = guiHelper.BoxSizerHelper(
             self, sizer=settingsSizer)
-        from .zoom import alertModeToLabel
+        from . import alertModeToLabel
         modeChoices = [item[1] for item in alertModeToLabel.items()]
         self.alertsReportingMode = settingsSizerHelper.addLabeledControl(
             # Translators: the lable of the combobox in the settings dialog
@@ -125,7 +125,7 @@ class SettingsPanel(gui.SettingsPanel):
         alertsGroup.addItem(self.IMChatReceivedCheckBox)
 
     def onSave(self):
-        from .zoom import alertModeToLabel
+        from . import alertModeToLabel
         newMode = [x[1] for x in alertModeToLabel.items()][
             self.alertsReportingMode.GetSelection()
         ]
