@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zoomEnhancements 1.1.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2021-08-17 09:00+0000\n"
-"PO-Revision-Date: 2024-01-04 14:12+0300\n"
+"PO-Revision-Date: 2024-01-20 08:41+0300\n"
 "Last-Translator: Danil Kostenkov <danilkostenkov38@gmail.com>\n"
 "Language-Team: Danil Kostenkov <danilkostenkov38@gmail.com>\n"
 "Language: ru\n"
@@ -35,11 +35,11 @@ msgstr ""
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Joined/Left Meeting"
-msgstr "Участник присоединился/покинул встречу"
+msgstr "Участник подключился / покинул конференцию"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Joined/Left Waiting Room"
-msgstr "Участник присоединился/покинул комнату ожидания"
+msgstr "Участник подключился / покинул зал ожидания"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Audio Muted by Host"
@@ -47,43 +47,43 @@ msgstr "Звук отключён организатором"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Video Stopped by Host"
-msgstr "Видео остановлено организатором"
+msgstr "Организатор остановил воспроизведение видео"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Screen Sharing Started/Stopped by a Participant"
-msgstr "Общий доступ к экрану запущен/остановлен участником"
+msgstr "Участник запустил/остановил демонстрацию экрана"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Recording Permission Granted/Revoked"
-msgstr "Разрешение на запись получено/отозвано"
+msgstr "Привилегия на запись предоставлена/отозвана"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Public In-meeting Chat Received"
-msgstr "Получено сообщение в общем чате встречи"
+msgstr "Получено общее сообщение в чате конференции"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Private In-meeting Chat Received"
-msgstr "Получено сообщение в личном чате с участником встречи"
+msgstr "Получено личное сообщение в чате конференции"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "In-meeting File Upload Completed"
-msgstr "Загрузка файла на встречу завершена"
+msgstr "Отправка файла в конференцию завершена"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Host Privilege Granted/Revoked"
-msgstr "Привилегия ведущего предоставлена/отозвана"
+msgstr "Привилегия организатора предоставлена/отозвана"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Participant Has Raised/Lowered Hand (Host Only)"
-msgstr "Участник поднял/опустил руку (только для ведущего)"
+msgstr "Участник поднял/опустил руку (только для организатора)"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "Remote Control Permission Granted/Revoked"
-msgstr "Разрешение на удалённое управление получено/отменено"
+msgstr "Разрешение на удалённое управление предоставлено/отозвано"
 
 #. Translators: a label of a checkbox in the settings dialog
 msgid "IM Chat Received"
-msgstr "Получено сообщение в чате встречи"
+msgstr "Получено сообщение в чате для обмена мгновенными сообщениями"
 
 #. Translators: the name of the add-on category in input gestures
 #. Add-on summary, usually the user visible name of the addon.
@@ -117,22 +117,21 @@ msgstr "включено"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left meeting alerts on / off"
-msgstr "Переключает оповещения о присоединившихся/ покинувших встречу"
+msgstr "Переключает оповещения о присоединившихся/ покинувших конференцию"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Joined/Left Meeting is %s"
-msgstr "Оповещение Участник %s Присоединился/покинул встречу"
+msgstr "Оповещение Участник %s Присоединился/покинул конференцию"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting joined / left Waiting Room alerts on / off"
-msgstr ""
-"Переключает оповещения о присоединении к комнате ожидания /выходе из неё"
+msgstr "Переключает оповещения о присоединении к залу ожидания /выходе из него"
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Participant Has Joined/Left Waiting Room is %s"
-msgstr "Оповещение Участник %s Присоединился/покинул комнату ожидания"
+msgstr "Оповещение Участник %s Присоединился/покинул зал ожидания"
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting audio muted by host alerts on / off"
@@ -177,41 +176,41 @@ msgstr "Оповещение \"разрешение на запись %s пре�
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting public in-meeting chat received alerts on / off"
-msgstr "Переключает оповещение \"получено сообщение в общем чате встречи\""
+msgstr "Переключает оповещение \"Получено общее сообщение в чате конференции\""
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Public In-meeting Chat Received is %s"
-msgstr "Оповещение \"Получено сообщение в общем чате %s\""
+msgstr "Оповещение \"получено общее сообщение в чате %s\""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting private in-meeting chat received alerts on / off"
 msgstr ""
-"Переключает оповещение \"получено сообщение в личном чате с участником "
-"встречи\""
+"Переключает оповещение \"получено личное сообщение в чате конференции\""
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Private In-meeting Chat Received is %s"
-msgstr "Оповещение \"Получено сообщение в личном чате %s\""
+msgstr "Оповещение \"Получено личное сообщение в чате %s\""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting in-meeting file upload completed alerts on / off"
-msgstr "Переключает оповещение \"загрузка файла на встречу завершена\""
+msgstr "Переключает оповещение \"отправка файла в конференцию завершена\""
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting In-meeting File Upload Completed is %s"
-msgstr "Оповещение\"загрузка файла %s на встречу завершена\""
+msgstr "Оповещение\"отправка файла %s в конференцию завершена\""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting host privilege granted / revoked alerts on / off"
-msgstr "Переключает оповещение \"привилегия ведущего  предоставлена/отозвана\""
+msgstr ""
+"Переключает оповещение \"привилегия организатора предоставлена/отозвана\""
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting Host Privilege Granted/Revoked is %s"
-msgstr "Оповещение \"привилегия ведущего предоставлена/ отозвана  %s\""
+msgstr "Оповещение \"привилегия организатора предоставлена/ отозвана  %s\""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting participant raised / lowered hand alerts on / off"
@@ -237,12 +236,16 @@ msgstr ""
 
 #. Translators: a description for a command to toggle reporting a spicific alert
 msgid "Toggles reporting IM chat received alerts on / off"
-msgstr "Переключает оповещение \"получено сообщение в чате встречи\""
+msgstr ""
+"Переключает оповещение \"получено сообщение в чате для обмена мгновенными "
+"сообщениями\""
 
 #. Translators: a message reported for the user when toggling reporting a spicific alert
 #, python-format
 msgid "Reporting IM Chat Received is %s"
-msgstr "Оповещение \"получено сообщение в чате встречи\" %s"
+msgstr ""
+"Оповещение \"Получено сообщение в чате для обмена мгновенными сообщениями: "
+"%s\""
 
 #. Translators: a description for a command to cycle between alerts reporting modes
 msgid ""
